@@ -1,0 +1,39 @@
+name: עדכון חנויות קניונים
+
+on:
+  schedule:
+    - cron: "0 3 */2 * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: משיכת הקוד
+        uses: actions/checkout@v4
+
+      - name: התקנת פייתון
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: התקנת תלויות
+        run: pip install requests beautifulsoup4 lxml
+
+      - name: הרצת המנוע
+        run: python3 scraper.py
+
+      - name: שמירת שינויים (אם יש)
+        run: |
+          git config user.name "mall-bot"
+          git config user.email "actions@github.com"
+          git add stores.json
+          if git diff --staged --quiet; then
+            echo "אין שינויים בחנויות."
+          else
+            git commit -m "עדכון אוטומטי של חנויות הקניונים ($(date +%F))"
+            git push
+          fi
