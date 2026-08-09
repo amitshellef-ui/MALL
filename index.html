@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>חיפוש חנויות בקניונים</title>
+<style>
+  :root{
+    --bg:#f4f6fb; --card:#ffffff; --ink:#1a2233; --muted:#6b7488;
+    --brand:#3b5bdb; --brand-2:#5c7cfa; --line:#e6e9f2; --shadow:0 6px 24px rgba(28,40,80,.08);
+    --hadar:#2f9e6f; --savyonim:#a6559a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI",Arial,"Noto Sans Hebrew",sans-serif;background:var(--bg);color:var(--ink)}
+  .wrap{max-width:920px;margin:0 auto;padding:22px 16px 60px}
+  header h1{font-size:1.5rem;margin:.2em 0}
+  header p{color:var(--muted);margin:.2em 0 1.1em}
+  .searchbar{position:relative;position:sticky;top:10px;z-index:5}
+  .searchbar input{
+    width:100%;padding:16px 52px 16px 18px;font-size:1.05rem;border:1.5px solid var(--line);
+    border-radius:14px;background:var(--card);box-shadow:var(--shadow);outline:none;transition:border .15s}
+  .searchbar input:focus{border-color:var(--brand-2)}
+  .searchbar .ico{position:absolute;inset-inline-start:16px;top:50%;transform:translateY(-50%);
+    color:var(--muted);font-size:1.2rem;pointer-events:none}
+  .filters{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 6px}
+  .chip{border:1.5px solid var(--line);background:var(--card);color:var(--ink);padding:7px 14px;
+    border-radius:999px;font-size:.9rem;cursor:pointer;transition:.15s}
+  .chip.active{background:var(--brand);border-color:var(--brand);color:#fff}
+  .meta{color:var(--muted);font-size:.85rem;margin:6px 2px 14px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;
+    display:flex;gap:12px;align-items:center;cursor:pointer;transition:transform .12s,box-shadow .12s}
+  .card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+  .logo{width:54px;height:54px;border-radius:12px;flex:0 0 auto;display:flex;align-items:center;
+    justify-content:center;color:#fff;font-weight:700;font-size:1.15rem;overflow:hidden}
+  .logo img{width:100%;height:100%;object-fit:contain;background:#fff}
+  .card .name{font-weight:600;font-size:1rem;line-height:1.2}
+  .badge{display:inline-block;margin-top:5px;font-size:.72rem;padding:3px 9px;border-radius:999px;color:#fff}
+  .badge.hadar{background:var(--hadar)} .badge.savyonim{background:var(--savyonim)}
+  .empty{text-align:center;color:var(--muted);padding:50px 10px}
+  /* modal */
+  .overlay{position:fixed;inset:0;background:rgba(20,26,45,.5);display:none;align-items:center;
+    justify-content:center;padding:16px;z-index:20}
+  .overlay.show{display:flex}
+  .modal{background:var(--card);border-radius:20px;max-width:420px;width:100%;padding:24px;
+    box-shadow:0 20px 60px rgba(20,26,45,.3);animation:pop .18s ease}
+  @keyframes pop{from{transform:scale(.96);opacity:0}to{transform:scale(1);opacity:1}}
+  .modal .top{display:flex;gap:14px;align-items:center;margin-bottom:14px}
+  .modal .logo{width:70px;height:70px;font-size:1.5rem}
+  .modal h2{margin:0;font-size:1.3rem}
+  .rows{margin-top:6px}
+  .row{display:flex;justify-content:space-between;gap:10px;padding:11px 2px;border-top:1px solid var(--line)}
+  .row .k{color:var(--muted)} .row .v{font-weight:600;text-align:start}
+  .row a.v{color:var(--brand);text-decoration:none}
+  .closex{background:var(--bg);border:none;border-radius:10px;padding:10px 14px;cursor:pointer;
+    width:100%;margin-top:18px;font-size:1rem;color:var(--ink)}
+  .floorpill{font-weight:700;color:var(--brand)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>מדריך חנויות בקניונים</h1>
+    <p>קניון הדר ירושלים · קניון סביונים יהוד — חפשו חנות וראו באיזו קומה היא נמצאת</p>
+  </header>
+
+  <div class="searchbar">
+    <span class="ico">🔍</span>
+    <input id="q" type="search" placeholder="הקלידו שם חנות… (למשל: פוקס, סופר פארם, דלתא)" autocomplete="off">
+  </div>
+
+  <div class="filters" id="filters">
+    <button class="chip active" data-mall="all">כל הקניונים</button>
+    <button class="chip" data-mall="hadar">קניון הדר</button>
+    <button class="chip" data-mall="savyonim">קניון סביונים</button>
+  </div>
+
+  <div class="meta" id="meta"></div>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" style="display:none">לא נמצאה חנות בשם הזה. נסו שם אחר.</div>
+</div>
+
+<div class="overlay" id="overlay">
+  <div class="modal" id="modal"></div>
+</div>
+
+<script>
+// כתובת קובץ הנתונים. אם מטמיעים באתר אחר — אפשר לשים כאן URL מלא.
+const DATA_URL = "stores.json";
+let STORES = [], MALL = "all";
+
+const $ = s => document.querySelector(s);
+const norm = s => (s||"").toString().toLowerCase().replace(/["'’.\-]/g,"").replace(/\s+/g," ").trim();
+const PAL = ["#3b5bdb","#2f9e6f","#a6559a","#e8590c","#1098ad","#d6336c","#5f3dc4","#f08c00","#0b7285"];
+function color(name){let h=0;for(const c of name)h=(h*31+c.charCodeAt(0))>>>0;return PAL[h%PAL.length];}
+function initials(name){
+  const t=name.replace(/[^A-Za-zא-ת ]/g,"").trim().split(/\s+/);
+  return ((t[0]||name)[0]||"?")+((t[1]||"")[0]||"");
+}
+function logoHTML(s,big){
+  if(s.image) return `<div class="logo"><img src="${s.image}" alt="${s.name}" onerror="this.parentNode.textContent='${initials(s.name)}';this.parentNode.style.background='${color(s.name)}'"></div>`;
+  return `<div class="logo" style="background:${color(s.name)}">${initials(s.name)}</div>`;
+}
+function mallClass(k){return k==="hadar"?"hadar":"savyonim";}
+function mallName(k){return k==="hadar"?"קניון הדר":"קניון סביונים";}
+
+function render(){
+  const q = norm($("#q").value);
+  let list = STORES.filter(s => MALL==="all" || s.mall_key===MALL);
+  if(q) list = list.filter(s => norm(s.name).includes(q) || norm(s.category).includes(q));
+  list.sort((a,b)=> a.name.localeCompare(b.name,"he"));
+  const grid=$("#grid"); grid.innerHTML="";
+  $("#empty").style.display = list.length? "none":"block";
+  $("#meta").textContent = q ? `${list.length} תוצאות עבור "${$("#q").value.trim()}"`
+                             : `סה״כ ${list.length} חנויות`;
+  for(const s of list){
+    const el=document.createElement("div");
+    el.className="card";
+    el.innerHTML = `${logoHTML(s)}<div><div class="name">${s.name}</div>
+      <span class="badge ${mallClass(s.mall_key)}">${mallName(s.mall_key)}</span></div>`;
+    el.onclick=()=>openModal(s);
+    grid.appendChild(el);
+  }
+}
+function fRow(k,v){return v?`<div class="row"><span class="k">${k}</span><span class="v">${v}</span></div>`:"";}
+function openModal(s){
+  const floor = s.floor || "לא ידוע";
+  const tel = s.phone ? `<a class="v" href="tel:${s.phone.replace(/[^0-9+]/g,"")}">${s.phone}</a>` : null;
+  $("#modal").innerHTML = `
+    <div class="top">${logoHTML(s,true)}
+      <div><h2>${s.name}</h2>
+      <span class="badge ${mallClass(s.mall_key)}">${s.mall}</span></div></div>
+    <div class="rows">
+      <div class="row"><span class="k">קומה</span><span class="v floorpill">${floor}</span></div>
+      ${fRow("קטגוריה", s.category)}
+      ${s.phone ? `<div class="row"><span class="k">טלפון</span>${tel}</div>`:""}
+      ${fRow("שעות פתיחה", s.hours)}
+      ${fRow("קניון", s.mall)}
+    </div>
+    <button class="closex" onclick="closeModal()">סגירה</button>`;
+  $("#overlay").classList.add("show");
+}
+function closeModal(){$("#overlay").classList.remove("show");}
+$("#overlay").onclick=e=>{if(e.target.id==="overlay")closeModal();};
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal();});
+$("#q").addEventListener("input",render);
+$("#filters").addEventListener("click",e=>{
+  if(!e.target.classList.contains("chip"))return;
+  document.querySelectorAll(".chip").forEach(c=>c.classList.remove("active"));
+  e.target.classList.add("active"); MALL=e.target.dataset.mall; render();
+});
+
+fetch(DATA_URL).then(r=>r.json()).then(d=>{
+  STORES = d.stores||[];
+  if(d.updated_at){
+    const dt=new Date(d.updated_at);
+    $("#meta").textContent = "עודכן: "+dt.toLocaleDateString("he-IL");
+  }
+  render();
+}).catch(err=>{
+  $("#empty").style.display="block";
+  $("#empty").textContent="שגיאה בטעינת הנתונים. ודאו שהקובץ stores.json נמצא לצד העמוד ושהעמוד מוגש דרך שרת (http), לא נפתח כקובץ מקומי.";
+  console.error(err);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,2042 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>חיפוש חנויות בקניונים — דמו</title>
+<style>
+  :root{
+    --bg:#f4f6fb; --card:#ffffff; --ink:#1a2233; --muted:#6b7488;
+    --brand:#3b5bdb; --brand-2:#5c7cfa; --line:#e6e9f2; --shadow:0 6px 24px rgba(28,40,80,.08);
+    --hadar:#2f9e6f; --savyonim:#a6559a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI",Arial,"Noto Sans Hebrew",sans-serif;background:var(--bg);color:var(--ink)}
+  .wrap{max-width:920px;margin:0 auto;padding:22px 16px 60px}
+  header h1{font-size:1.5rem;margin:.2em 0}
+  header p{color:var(--muted);margin:.2em 0 1.1em}
+  .searchbar{position:relative;position:sticky;top:10px;z-index:5}
+  .searchbar input{
+    width:100%;padding:16px 52px 16px 18px;font-size:1.05rem;border:1.5px solid var(--line);
+    border-radius:14px;background:var(--card);box-shadow:var(--shadow);outline:none;transition:border .15s}
+  .searchbar input:focus{border-color:var(--brand-2)}
+  .searchbar .ico{position:absolute;inset-inline-start:16px;top:50%;transform:translateY(-50%);
+    color:var(--muted);font-size:1.2rem;pointer-events:none}
+  .filters{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 6px}
+  .chip{border:1.5px solid var(--line);background:var(--card);color:var(--ink);padding:7px 14px;
+    border-radius:999px;font-size:.9rem;cursor:pointer;transition:.15s}
+  .chip.active{background:var(--brand);border-color:var(--brand);color:#fff}
+  .meta{color:var(--muted);font-size:.85rem;margin:6px 2px 14px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;
+    display:flex;gap:12px;align-items:center;cursor:pointer;transition:transform .12s,box-shadow .12s}
+  .card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+  .logo{width:54px;height:54px;border-radius:12px;flex:0 0 auto;display:flex;align-items:center;
+    justify-content:center;color:#fff;font-weight:700;font-size:1.15rem;overflow:hidden}
+  .logo img{width:100%;height:100%;object-fit:contain;background:#fff}
+  .card .name{font-weight:600;font-size:1rem;line-height:1.2}
+  .badge{display:inline-block;margin-top:5px;font-size:.72rem;padding:3px 9px;border-radius:999px;color:#fff}
+  .badge.hadar{background:var(--hadar)} .badge.savyonim{background:var(--savyonim)}
+  .empty{text-align:center;color:var(--muted);padding:50px 10px}
+  /* modal */
+  .overlay{position:fixed;inset:0;background:rgba(20,26,45,.5);display:none;align-items:center;
+    justify-content:center;padding:16px;z-index:20}
+  .overlay.show{display:flex}
+  .modal{background:var(--card);border-radius:20px;max-width:420px;width:100%;padding:24px;
+    box-shadow:0 20px 60px rgba(20,26,45,.3);animation:pop .18s ease}
+  @keyframes pop{from{transform:scale(.96);opacity:0}to{transform:scale(1);opacity:1}}
+  .modal .top{display:flex;gap:14px;align-items:center;margin-bottom:14px}
+  .modal .logo{width:70px;height:70px;font-size:1.5rem}
+  .modal h2{margin:0;font-size:1.3rem}
+  .rows{margin-top:6px}
+  .row{display:flex;justify-content:space-between;gap:10px;padding:11px 2px;border-top:1px solid var(--line)}
+  .row .k{color:var(--muted)} .row .v{font-weight:600;text-align:start}
+  .row a.v{color:var(--brand);text-decoration:none}
+  .closex{background:var(--bg);border:none;border-radius:10px;padding:10px 14px;cursor:pointer;
+    width:100%;margin-top:18px;font-size:1rem;color:var(--ink)}
+  .floorpill{font-weight:700;color:var(--brand)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>מדריך חנויות בקניונים</h1>
+    <p>קניון הדר ירושלים · קניון סביונים יהוד — חפשו חנות וראו באיזו קומה היא נמצאת</p>
+  </header>
+
+  <div class="searchbar">
+    <span class="ico">🔍</span>
+    <input id="q" type="search" placeholder="הקלידו שם חנות… (למשל: פוקס, סופר פארם, דלתא)" autocomplete="off">
+  </div>
+
+  <div class="filters" id="filters">
+    <button class="chip active" data-mall="all">כל הקניונים</button>
+    <button class="chip" data-mall="hadar">קניון הדר</button>
+    <button class="chip" data-mall="savyonim">קניון סביונים</button>
+  </div>
+
+  <div class="meta" id="meta"></div>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" style="display:none">לא נמצאה חנות בשם הזה. נסו שם אחר.</div>
+</div>
+
+<div class="overlay" id="overlay">
+  <div class="modal" id="modal"></div>
+</div>
+
+<script>
+// כתובת קובץ הנתונים. אם מטמיעים באתר אחר — אפשר לשים כאן URL מלא.
+const DATA_URL = "stores.json";
+let STORES = [], MALL = "all";
+
+const $ = s => document.querySelector(s);
+const norm = s => (s||"").toString().toLowerCase().replace(/["'’.\-]/g,"").replace(/\s+/g," ").trim();
+const PAL = ["#3b5bdb","#2f9e6f","#a6559a","#e8590c","#1098ad","#d6336c","#5f3dc4","#f08c00","#0b7285"];
+function color(name){let h=0;for(const c of name)h=(h*31+c.charCodeAt(0))>>>0;return PAL[h%PAL.length];}
+function initials(name){
+  const t=name.replace(/[^A-Za-zא-ת ]/g,"").trim().split(/\s+/);
+  return ((t[0]||name)[0]||"?")+((t[1]||"")[0]||"");
+}
+function logoHTML(s,big){
+  if(s.image) return `<div class="logo"><img src="${s.image}" alt="${s.name}" onerror="this.parentNode.textContent='${initials(s.name)}';this.parentNode.style.background='${color(s.name)}'"></div>`;
+  return `<div class="logo" style="background:${color(s.name)}">${initials(s.name)}</div>`;
+}
+function mallClass(k){return k==="hadar"?"hadar":"savyonim";}
+function mallName(k){return k==="hadar"?"קניון הדר":"קניון סביונים";}
+
+function render(){
+  const q = norm($("#q").value);
+  let list = STORES.filter(s => MALL==="all" || s.mall_key===MALL);
+  if(q) list = list.filter(s => norm(s.name).includes(q) || norm(s.category).includes(q));
+  list.sort((a,b)=> a.name.localeCompare(b.name,"he"));
+  const grid=$("#grid"); grid.innerHTML="";
+  $("#empty").style.display = list.length? "none":"block";
+  $("#meta").textContent = q ? `${list.length} תוצאות עבור "${$("#q").value.trim()}"`
+                             : `סה״כ ${list.length} חנויות`;
+  for(const s of list){
+    const el=document.createElement("div");
+    el.className="card";
+    el.innerHTML = `${logoHTML(s)}<div><div class="name">${s.name}</div>
+      <span class="badge ${mallClass(s.mall_key)}">${mallName(s.mall_key)}</span></div>`;
+    el.onclick=()=>openModal(s);
+    grid.appendChild(el);
+  }
+}
+function fRow(k,v){return v?`<div class="row"><span class="k">${k}</span><span class="v">${v}</span></div>`:"";}
+function openModal(s){
+  const floor = s.floor || "לא ידוע";
+  const tel = s.phone ? `<a class="v" href="tel:${s.phone.replace(/[^0-9+]/g,"")}">${s.phone}</a>` : null;
+  $("#modal").innerHTML = `
+    <div class="top">${logoHTML(s,true)}
+      <div><h2>${s.name}</h2>
+      <span class="badge ${mallClass(s.mall_key)}">${s.mall}</span></div></div>
+    <div class="rows">
+      <div class="row"><span class="k">קומה</span><span class="v floorpill">${floor}</span></div>
+      ${fRow("קטגוריה", s.category)}
+      ${s.phone ? `<div class="row"><span class="k">טלפון</span>${tel}</div>`:""}
+      ${fRow("שעות פתיחה", s.hours)}
+      ${fRow("קניון", s.mall)}
+    </div>
+    <button class="closex" onclick="closeModal()">סגירה</button>`;
+  $("#overlay").classList.add("show");
+}
+function closeModal(){$("#overlay").classList.remove("show");}
+$("#overlay").onclick=e=>{if(e.target.id==="overlay")closeModal();};
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal();});
+$("#q").addEventListener("input",render);
+$("#filters").addEventListener("click",e=>{
+  if(!e.target.classList.contains("chip"))return;
+  document.querySelectorAll(".chip").forEach(c=>c.classList.remove("active"));
+  e.target.classList.add("active"); MALL=e.target.dataset.mall; render();
+});
+
+const EMBEDDED={
+  "updated_at": null,
+  "source": "seed",
+  "malls": [
+    {
+      "key": "hadar",
+      "name": "קניון הדר ירושלים",
+      "city": "ירושלים"
+    },
+    {
+      "key": "savyonim",
+      "name": "קניון סביונים יהוד",
+      "city": "יהוד"
+    }
+  ],
+  "count": 155,
+  "stores": [
+    {
+      "id": "8fb877d6e6",
+      "name": "Diana",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "תכשיטים ופירסינג",
+      "phone": "050-6235684",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "f71588b7b1",
+      "name": "Adidas Outlet",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "-2",
+      "category": "אופנה והנעלה",
+      "phone": null,
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "5db88c80c1",
+      "name": "B-FRESH",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "בתי קפה ומזון",
+      "phone": "052-7788966",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "4772b5c724",
+      "name": "Delta",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "אופנה והנעלה",
+      "phone": "02-6720052",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "0dbb4477e7",
+      "name": "Flying Tiger",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "מתנות וכלי בית",
+      "phone": null,
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "295591ba37",
+      "name": "GOLF&KIDS",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "ילדים ותינוקות",
+      "phone": "02-6726660",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "404bd9afc0",
+      "name": "Gali",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "אופנה והנעלה",
+      "phone": "02-6712499",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "98b05c4565",
+      "name": "Honigman Kids",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "אופנה והנעלה",
+      "phone": "02-6289519",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "ca296f7a6d",
+      "name": "Lord Kitsch",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "אופנה והנעלה",
+      "phone": "02-6526255",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "b374db4d09",
+      "name": "MOR ADIKA",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "תכשיטים ושעונים",
+      "phone": "050-7161776",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "444b77aee9",
+      "name": "Nike Outlet",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "אופנה והנעלה",
+      "phone": "02-6236253",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "e8065d5d42",
+      "name": "OSHER ELIASI",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "תכשיטים ושעונים",
+      "phone": "058-6101777",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "413c20c85f",
+      "name": "Papaya",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "אופנה והנעלה",
+      "phone": "02-5337933",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "ce99b187b1",
+      "name": "ROLADIN",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "בתי קפה ומזון",
+      "phone": "02-5330989",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "49eb58b166",
+      "name": "SACARA",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "קוסמטיקה וטיפוח",
+      "phone": "02-6285228",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "9f1774c109",
+      "name": "Sabon",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "קוסמטיקה וטיפוח",
+      "phone": "02-6518260",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "5d27e8d752",
+      "name": "Teva Naot",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "אופנה והנעלה",
+      "phone": "02-6483641",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "baba8f89a0",
+      "name": "VAN SEES 26",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "אופנה והנעלה",
+      "phone": "050-6452626",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "738d3bfa99",
+      "name": "be-good",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "-2",
+      "category": "אופנה והנעלה",
+      "phone": "02-6724133",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "0e8e07339b",
+      "name": "e-post",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "-2",
+      "category": "סידורים",
+      "phone": null,
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "6eb5fd16b9",
+      "name": "fox home",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "מתנות וכלי בית",
+      "phone": "02-6258108",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "879349aae1",
+      "name": "rebar",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "בתי קפה ומזון",
+      "phone": null,
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "453323c8c0",
+      "name": "א.ל.מ",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "2",
+      "category": "מוצרי חשמל",
+      "phone": "02-5719871",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "c640891ebc",
+      "name": "אופטיקנה",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "אופטיקה",
+      "phone": "02-6734851",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "f979dd0c46",
+      "name": "אריסטו שמט",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "אופנה והנעלה",
+      "phone": "073-2022527",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "2f957b50c0",
+      "name": "וזאת הברכה",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "מתנות וכלי בית",
+      "phone": "02-6736755",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "0977d0f060",
+      "name": "טרקלין חשמל",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "-2",
+      "category": "מוצרי חשמל",
+      "phone": "02-6728148",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "9b5efa3fe9",
+      "name": "MANIA JEANS",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "אופנה והנעלה",
+      "phone": "02-5695775",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "e74061c866",
+      "name": "מחסני חשמל",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "מחשבים וסלולר",
+      "phone": "052-2756545",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "b6abb61611",
+      "name": "מכבסה",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "-1",
+      "category": "סידורים",
+      "phone": "02-6502167",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "2fc397e38d",
+      "name": "מרפאת שיניים ד\"ר משאהרה גאנם",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "2",
+      "category": "רפואה",
+      "phone": "02-3750950",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "3516e87dab",
+      "name": "סיפורי שיער",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "קוסמטיקה וטיפוח",
+      "phone": "02-6725093",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "b3b1354c9c",
+      "name": "עולם הממתקים",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "בתי קפה ומזון",
+      "phone": "054-5722859",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "b0cc6dff14",
+      "name": "צומת ספרים",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "ספרים וציוד משרדי",
+      "phone": "02-6730818",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "ef9cac014a",
+      "name": "054OUTLET",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "אופנה והנעלה",
+      "phone": "02-6784820",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "c1cf37aa0c",
+      "name": "Afrodita",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "הלבשה תחתונה",
+      "phone": "02-6734623",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "3ff4b8512e",
+      "name": "Burgers Bar",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "בתי קפה ומזון",
+      "phone": "02-5353313",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "e79b740351",
+      "name": "Emporium",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "אופנה והנעלה",
+      "phone": "02-5329394",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "6db771961f",
+      "name": "Foot Locker",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "אופנה והנעלה",
+      "phone": "02-6741027",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "8e5d5daf5e",
+      "name": "GOLF",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "אופנה והנעלה",
+      "phone": "073-7091002",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "b500872daf",
+      "name": "Golbary",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "אופנה והנעלה",
+      "phone": "02-6502896",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "83ce1df711",
+      "name": "Hoodies",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "אופנה והנעלה",
+      "phone": "02-5731709",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "1eed32140a",
+      "name": "MAZI PARIZ",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "אופנה והנעלה",
+      "phone": "02-6728881",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "f8e5bb705e",
+      "name": "Magnolia",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "תכשיטים ושעונים",
+      "phone": "054-9385969",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "357a04f3c7",
+      "name": "Nimrod",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "אופנה והנעלה",
+      "phone": "053-8320666",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "0d3948c183",
+      "name": "Olivia Estilo",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "תכשיטים ושעונים",
+      "phone": "058-4726949",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "421fe1795e",
+      "name": "Partner",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "מחשבים וסלולר",
+      "phone": null,
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "bc8d41d761",
+      "name": "Renuar",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "אופנה והנעלה",
+      "phone": "1800-255225",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "fe0f1d2b1b",
+      "name": "SILVERIO",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "תכשיטים ושעונים",
+      "phone": "052-6663889",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "783177aded",
+      "name": "TEA BAR",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "בתי קפה ומזון",
+      "phone": null,
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "992be6a467",
+      "name": "The Children's Place",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "אופנה והנעלה",
+      "phone": "02-5393147",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "c0c167c8b4",
+      "name": "Waffle Bar",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "בתי קפה ומזון",
+      "phone": "02-6450209",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "d6af6abd05",
+      "name": "celio",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "-2",
+      "category": "אופנה והנעלה",
+      "phone": "02-6720314",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "c367af50e2",
+      "name": "פמינה",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "הלבשה תחתונה",
+      "phone": "050-9192683",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "3d32a625e5",
+      "name": "iToch",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "מחשבים וסלולר",
+      "phone": "055-9393333",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "c6f938bbaf",
+      "name": "weshoes",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "אופנה והנעלה",
+      "phone": "076-8100410",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "ba0f81462d",
+      "name": "מתפרה",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "-1",
+      "category": "סידורים",
+      "phone": "02-6735473",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "1ab3ca1e3a",
+      "name": "אושר עד",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "-2",
+      "category": "סופרמרקט",
+      "phone": "052-6343044",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "e3c5ae5b34",
+      "name": "הדר מעבדות סלולר",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "-1",
+      "category": "מחשבים וסלולר",
+      "phone": "02-5000125",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "f78aaaa4d9",
+      "name": "חומוס אליהו",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "בתי קפה ומזון",
+      "phone": "02-6754455",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "482bb1cf73",
+      "name": "יוסי לוי מעצב שיער",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "קוסמטיקה וטיפוח",
+      "phone": "02-6718478",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "8fc781aebb",
+      "name": "מאפה נאמן",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "בתי קפה ומזון",
+      "phone": "052-7224722",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "cf6d83532a",
+      "name": "מטימו",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "שונות",
+      "phone": "02-6712121",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "f6cf046e51",
+      "name": "מפעל הפיס",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "-1",
+      "category": "שונות",
+      "phone": "052-4655422",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "d5fe586f12",
+      "name": "סופר פארם",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "פארם",
+      "phone": "077-8880950",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "4fc7510956",
+      "name": "סנדלריה",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "-1",
+      "category": "סידורים",
+      "phone": "02-6735473",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "d63604436f",
+      "name": "פעלטון",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "2",
+      "category": "ילדים ותינוקות",
+      "phone": "02-5862963",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "f92f0b7428",
+      "name": "AROMA",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "בתי קפה ומזון",
+      "phone": null,
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "bd89b3f69c",
+      "name": "American Eagle",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "אופנה והנעלה",
+      "phone": "02-6257841",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "136af173ab",
+      "name": "Crazy Line",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "אופנה והנעלה",
+      "phone": "02-5631540",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "1ff6ea905f",
+      "name": "FOX",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "אופנה והנעלה",
+      "phone": "02-6730834",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "98c3445808",
+      "name": "GANT OUTLET",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "אופנה והנעלה",
+      "phone": "02-5918381",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "203d1faf61",
+      "name": "GOLF&CO",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "מתנות וכלי בית",
+      "phone": "02-6726660",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "f00a0147d6",
+      "name": "Greg Cafe",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "בתי קפה ומזון",
+      "phone": "02-5367870",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "4d10f41742",
+      "name": "IL MAKIAGE",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "קוסמטיקה וטיפוח",
+      "phone": "03-5420247",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "7ec495edd4",
+      "name": "MOBI CELL",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "מחשבים וסלולר",
+      "phone": "050-8859932",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "67dde0f6b4",
+      "name": "Nei Gong",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "בתי קפה ומזון",
+      "phone": "02-5699952",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "893cd633dc",
+      "name": "Noizz",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "אופנה והנעלה",
+      "phone": "02-5695775",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "833c663142",
+      "name": "PIZZA KAPREZA",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "בתי קפה ומזון",
+      "phone": "02-6450209",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "1b39f3a71f",
+      "name": "REPLAY",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "אופנה והנעלה",
+      "phone": "02-5662196",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "8da3ad216d",
+      "name": "Rolly",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "בתי קפה ומזון",
+      "phone": null,
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "bc9e9572b9",
+      "name": "SIX PLAY",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "ילדים ותינוקות",
+      "phone": "02-6206666",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "d70886c31f",
+      "name": "TWENTYFOURSEVEN",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "אופנה והנעלה",
+      "phone": null,
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "0911a38aaa",
+      "name": "Top Ten",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "תכשיטים ושעונים",
+      "phone": "073-3733606",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "f3bd10fc3d",
+      "name": "ZIP",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "-2",
+      "category": "אופנה והנעלה",
+      "phone": "050-8326185",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "a5b9b0319e",
+      "name": "dynamica",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "מחשבים וסלולר",
+      "phone": "1800-071071",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "b1975d4a30",
+      "name": "food appeal",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "מתנות וכלי בית",
+      "phone": "02-5357566",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "ca52cd43f3",
+      "name": "italia 38",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "2",
+      "category": "בתי קפה ומזון",
+      "phone": null,
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "8e66939280",
+      "name": "א.א אורטופדיה",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "רפואה",
+      "phone": "077-6014383",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "4501d6c71f",
+      "name": "אופטיקה הלפרין",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "אופטיקה",
+      "phone": "02-5367302",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "5c2cd528a2",
+      "name": "ALDO",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "אופנה והנעלה",
+      "phone": "02-5806163",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "c437f37892",
+      "name": "הפיראט האדום",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "-2",
+      "category": "ילדים ותינוקות",
+      "phone": "02-6712080",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "c969ba2385",
+      "name": "חנן מכשירי כתיבה",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "ספרים וציוד משרדי",
+      "phone": "02-6730794",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "8cd841baf2",
+      "name": "Lalin",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "1",
+      "category": "קוסמטיקה וטיפוח",
+      "phone": "054-3345096",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "898b39471a",
+      "name": "מוצצים",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "2",
+      "category": "ילדים ותינוקות",
+      "phone": "08-6269432",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "197ea26855",
+      "name": "מי-טלה",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "אופנה והנעלה",
+      "phone": "052-8526860",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "ca154bf2f6",
+      "name": "מרכז רפואי הדר",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "רפואה",
+      "phone": "02-6717171",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "07a63a0365",
+      "name": "סיטידנט מרפאת שיניים",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "0",
+      "category": "רפואה",
+      "phone": "02-6241699",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "35d0c4f1ce",
+      "name": "SPARKLE",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "-1",
+      "category": "קוסמטיקה וטיפוח",
+      "phone": "072-2300910",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "e8ffe2f98f",
+      "name": "CHANGE",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": "-1",
+      "category": "סידורים",
+      "phone": "077-4261683",
+      "hours": null,
+      "image": null,
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "a1f8b923f0",
+      "name": "שופרסל",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "סופרמרקט",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "6a0513c46f",
+      "name": "דנה אשכנזי",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "אופנה",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "cc0d405d90",
+      "name": "חוות נעמי",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "בית ומתנות",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "2271c23e61",
+      "name": "רי באר",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "מסעדות ובתי קפה",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "e4d929a3d3",
+      "name": "ארומה",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "בילוי ופנאי",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "c1a5af1aff",
+      "name": "בוסתן",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "בית ומתנות",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "ffdaf72038",
+      "name": "סטימצקי",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "ספרים",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "4891dbe031",
+      "name": "היינס",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "אופנה",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "c843384905",
+      "name": "הטחנה",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "מסעדות ובתי קפה",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "589f9343dc",
+      "name": "ללין",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "בית ומתנות",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "0750b6fd56",
+      "name": "רולדין",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "מסעדות ובתי קפה",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "acab84c2c2",
+      "name": "הבורסה לתכשיטים",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "אופנה",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "13f587afd7",
+      "name": "תיק התיקים",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "אקססוריז",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "c26cd7ad12",
+      "name": "צ'או בלה",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "כללי",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "86a32b7595",
+      "name": "קרביץ",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "בית ומתנות",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "dad9d838af",
+      "name": "בורגר סלון",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "בילוי ופנאי",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "c18f048277",
+      "name": "באג",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "תקשורת ואלקטרוניקה",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "578ef21957",
+      "name": "צ'וקה",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "כללי",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "2628053098",
+      "name": "פיצה פרגו",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "בילוי ופנאי",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "cf954895eb",
+      "name": "אופטיקנה",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "אופטיקה",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "11450d4e87",
+      "name": "אפרודיטה",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "אופנה",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "9ffc81ddf7",
+      "name": "צמצם",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "בית ומתנות",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "90f0c6bfc0",
+      "name": "איל מקיאג'",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "טיפוח וקוסמטיקה",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "f0e8151615",
+      "name": "רן אלון סלולר",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "תקשורת ואלקטרוניקה",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "c01e15d580",
+      "name": "ויט סק",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "שירותים",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "9adfe6ca11",
+      "name": "מוקה",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "אופנה",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "bdd80b353a",
+      "name": "זיג זג לוקרים",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "כללי",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "29c0ac5a42",
+      "name": "לוקרים פליינג קרגו",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "כללי",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "f66c514f3a",
+      "name": "מפעל הפיס",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "בילוי ופנאי",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "84b2aee390",
+      "name": "ורדא דוכן פרחים",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "בית ומתנות",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "cc348f8547",
+      "name": "גאדג'ט טיים",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "כללי",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "1572b4d2c5",
+      "name": "עולם הממתקים",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "בילוי ופנאי",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "f93b567a5c",
+      "name": "מגנוליה",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "אופנה",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "9d6a69a319",
+      "name": "שאנטי",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "אקססוריז",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "496cb93c11",
+      "name": "אוריין",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "כללי",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "882b05eb7e",
+      "name": "נוי השדה",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "בית ומתנות",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "ea8f222c2e",
+      "name": "די אן איי DNA - לוקר",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומת קרקע",
+      "category": "כללי",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "5958836ab8",
+      "name": "ווי שוז",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומה 2",
+      "category": "הנעלה",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "eac457d2c0",
+      "name": "בי דראגסטור BE",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומה 2",
+      "category": "כללי",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "a4516b0874",
+      "name": "לוסיל בית קפה",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומה 2",
+      "category": "מסעדות ובתי קפה",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "228ca82dfe",
+      "name": "פוקס",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומה 2",
+      "category": "אופנה",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "6b719c07bc",
+      "name": "תמנון",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומה 2",
+      "category": "אופנה",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "ef0176eac4",
+      "name": "דלתא",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומה 2",
+      "category": "אופנה",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "85869f9b57",
+      "name": "גרביטי פארק",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומה 2",
+      "category": "בילוי ופנאי",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "0733f889ee",
+      "name": "צברה",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומה 2",
+      "category": "אופנה",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "8325aab9e5",
+      "name": "פטמקס",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומה 2",
+      "category": "בילוי ופנאי",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "7fc3a1911b",
+      "name": "עונות",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומה 2",
+      "category": "אופנה",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "680d0a2f0e",
+      "name": "מתאים לי",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומה 2",
+      "category": "אופנה",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "afd299bfd4",
+      "name": "הסטוק",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומה 2",
+      "category": "אקססוריז",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "1e0f913c34",
+      "name": "שמש לידיה",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומה 2",
+      "category": "כללי",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "cce20fde0e",
+      "name": "שרה'לה",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומה 2",
+      "category": "כללי",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "e4f40b62c8",
+      "name": "בנק מזרחי נציבים",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומה 2",
+      "category": "שירותים",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "66cd490acb",
+      "name": "סקארה",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומה 2",
+      "category": "אופנה",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "d768ebe96d",
+      "name": "המריץ לוקרים אייפוסט",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומה 2",
+      "category": "כללי",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "9acf3333f9",
+      "name": "קלין בוקס - מכבסה",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": "קומה 2",
+      "category": "שירותים",
+      "phone": null,
+      "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
+      "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    }
+  ]
+};
+(function(){const d=EMBEDDED;
+  STORES = d.stores||[];
+  if(d.updated_at){
+    const dt=new Date(d.updated_at);
+    $("#meta").textContent = "עודכן: "+dt.toLocaleDateString("he-IL");
+  }
+  render();
+})();
+</script>
+</body>
+</html>
