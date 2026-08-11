@@ -24,8 +24,8 @@
       "category": "תכשיטים ופירסינג",
       "phone": "050-6235684",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -37,11 +37,11 @@
       "category": "אופנה והנעלה",
       "phone": null,
       "hours": null,
-      "image": null,
       "aliases": [
         "adidas",
         "אדידס"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=adidas.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -53,10 +53,10 @@
       "category": "בתי קפה ומזון",
       "phone": "052-7788966",
       "hours": null,
-      "image": null,
       "aliases": [
         "בי פרש"
       ],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -68,10 +68,10 @@
       "category": "אופנה והנעלה",
       "phone": "02-6720052",
       "hours": null,
-      "image": null,
       "aliases": [
         "דלתא"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=delta.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -83,10 +83,10 @@
       "category": "מתנות וכלי בית",
       "phone": null,
       "hours": null,
-      "image": null,
       "aliases": [
         "פליינג טייגר"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=flyingtiger.com",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -98,12 +98,12 @@
       "category": "ילדים ותינוקות",
       "phone": "02-6726660",
       "hours": null,
-      "image": null,
       "aliases": [
         "golf",
         "גולף",
         "גולף קידס"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=golf.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -115,8 +115,8 @@
       "category": "אופנה והנעלה",
       "phone": "02-6712499",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -128,12 +128,12 @@
       "category": "אופנה והנעלה",
       "phone": "02-6289519",
       "hours": null,
-      "image": null,
       "aliases": [
         "honigman",
         "הוניגמן",
         "הוניגמן קידס"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=honigman.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -145,8 +145,8 @@
       "category": "אופנה והנעלה",
       "phone": "02-6526255",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -158,8 +158,8 @@
       "category": "תכשיטים ושעונים",
       "phone": "050-7161776",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -171,11 +171,11 @@
       "category": "אופנה והנעלה",
       "phone": "02-6236253",
       "hours": null,
-      "image": null,
       "aliases": [
         "nike",
         "נייקי"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=nike.com",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -187,8 +187,8 @@
       "category": "תכשיטים ושעונים",
       "phone": "058-6101777",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -200,10 +200,10 @@
       "category": "אופנה והנעלה",
       "phone": "02-5337933",
       "hours": null,
-      "image": null,
       "aliases": [
         "פפאיה"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=papaya.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -215,11 +215,11 @@
       "category": "בתי קפה ומזון",
       "phone": "02-5330989",
       "hours": null,
-      "image": null,
       "aliases": [
         "roladir",
         "רולדין"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=roladin.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -231,10 +231,10 @@
       "category": "קוסמטיקה וטיפוח",
       "phone": "02-6285228",
       "hours": null,
-      "image": null,
       "aliases": [
         "סקארה"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=sacara.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -246,10 +246,10 @@
       "category": "קוסמטיקה וטיפוח",
       "phone": "02-6518260",
       "hours": null,
-      "image": null,
       "aliases": [
         "סבון"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=sabon.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -261,10 +261,10 @@
       "category": "אופנה והנעלה",
       "phone": "02-6483641",
       "hours": null,
-      "image": null,
       "aliases": [
         "טבע נאות"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=naot.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -276,8 +276,8 @@
       "category": "אופנה והנעלה",
       "phone": "050-6452626",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -289,10 +289,10 @@
       "category": "אופנה והנעלה",
       "phone": "02-6724133",
       "hours": null,
-      "image": null,
       "aliases": [
         "בי גוד"
       ],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -304,12 +304,12 @@
       "category": "סידורים",
       "phone": null,
       "hours": null,
-      "image": null,
       "aliases": [
         "epost",
         "אי פוסט",
         "איפוסט"
       ],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -321,12 +321,12 @@
       "category": "מתנות וכלי בית",
       "phone": "02-6258108",
       "hours": null,
-      "image": null,
       "aliases": [
         "fox",
         "פוקס",
         "פוקס הום"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=fox.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -338,12 +338,12 @@
       "category": "בתי קפה ומזון",
       "phone": null,
       "hours": null,
-      "image": null,
       "aliases": [
         "re bar",
         "ריבר",
         "רי באר"
       ],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -355,8 +355,8 @@
       "category": "מוצרי חשמל",
       "phone": "02-5719871",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -368,11 +368,11 @@
       "category": "אופטיקה",
       "phone": "02-6734851",
       "hours": null,
-      "image": null,
       "aliases": [
         "optikana",
         "aptikana"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=optikana.com",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -384,8 +384,8 @@
       "category": "אופנה והנעלה",
       "phone": "073-2022527",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -397,8 +397,8 @@
       "category": "מתנות וכלי בית",
       "phone": "02-6736755",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -410,8 +410,8 @@
       "category": "מוצרי חשמל",
       "phone": "02-6728148",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -423,11 +423,11 @@
       "category": "אופנה והנעלה",
       "phone": "02-5695775",
       "hours": null,
-      "image": null,
       "aliases": [
         "מניה ג'ינס",
         "מאניה ג'ינס"
       ],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -439,8 +439,8 @@
       "category": "מחשבים וסלולר",
       "phone": "052-2756545",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -452,8 +452,8 @@
       "category": "סידורים",
       "phone": "02-6502167",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -465,8 +465,8 @@
       "category": "רפואה",
       "phone": "02-3750950",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -478,8 +478,8 @@
       "category": "קוסמטיקה וטיפוח",
       "phone": "02-6725093",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -491,8 +491,8 @@
       "category": "בתי קפה ומזון",
       "phone": "054-5722859",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -504,8 +504,8 @@
       "category": "ספרים וציוד משרדי",
       "phone": "02-6730818",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -517,8 +517,8 @@
       "category": "אופנה והנעלה",
       "phone": "02-6784820",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -530,10 +530,10 @@
       "category": "הלבשה תחתונה",
       "phone": "02-6734623",
       "hours": null,
-      "image": null,
       "aliases": [
         "אפרודיטה"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=afrodita.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -545,7 +545,6 @@
       "category": "בתי קפה ומזון",
       "phone": "02-5353313",
       "hours": null,
-      "image": null,
       "aliases": [
         "burger",
         "burger saloon",
@@ -554,6 +553,7 @@
         "בורגר סאלון",
         "בורגר"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=burgersbar.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -565,10 +565,10 @@
       "category": "אופנה והנעלה",
       "phone": "02-5329394",
       "hours": null,
-      "image": null,
       "aliases": [
         "אמפוריום"
       ],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -580,10 +580,10 @@
       "category": "אופנה והנעלה",
       "phone": "02-6741027",
       "hours": null,
-      "image": null,
       "aliases": [
         "פוט לוקר"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=footlocker.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -595,7 +595,6 @@
       "category": "אופנה והנעלה",
       "phone": "073-7091002",
       "hours": null,
-      "image": null,
       "aliases": [
         "גולף",
         "golf&kids",
@@ -605,6 +604,7 @@
         "golf co",
         "גולף קו"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=golf.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -616,10 +616,10 @@
       "category": "אופנה והנעלה",
       "phone": "02-6502896",
       "hours": null,
-      "image": null,
       "aliases": [
         "גולברי"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=golbary.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -631,10 +631,10 @@
       "category": "אופנה והנעלה",
       "phone": "02-5731709",
       "hours": null,
-      "image": null,
       "aliases": [
         "הודיס"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=hoodies.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -646,10 +646,10 @@
       "category": "אופנה והנעלה",
       "phone": "02-6728881",
       "hours": null,
-      "image": null,
       "aliases": [
         "מאזי פריז"
       ],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -661,10 +661,10 @@
       "category": "תכשיטים ושעונים",
       "phone": "054-9385969",
       "hours": null,
-      "image": null,
       "aliases": [
         "מגנוליה"
       ],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -676,8 +676,8 @@
       "category": "אופנה והנעלה",
       "phone": "053-8320666",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=nimrod-shoes.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -689,8 +689,8 @@
       "category": "תכשיטים ושעונים",
       "phone": "058-4726949",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -702,10 +702,10 @@
       "category": "מחשבים וסלולר",
       "phone": null,
       "hours": null,
-      "image": null,
       "aliases": [
         "פרטנר"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=partner.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -717,10 +717,10 @@
       "category": "אופנה והנעלה",
       "phone": "1800-255225",
       "hours": null,
-      "image": null,
       "aliases": [
         "רנואר"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=renuar.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -732,8 +732,8 @@
       "category": "תכשיטים ושעונים",
       "phone": "052-6663889",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -745,11 +745,11 @@
       "category": "בתי קפה ומזון",
       "phone": null,
       "hours": null,
-      "image": null,
       "aliases": [
         "טי בר",
         "תה בר"
       ],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -761,13 +761,13 @@
       "category": "אופנה והנעלה",
       "phone": "02-5393147",
       "hours": null,
-      "image": null,
       "aliases": [
         "childrens place",
         "children place",
         "הצ'ילדרנס פלייס",
         "צ'ילדרן פלייס"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=childrensplace.com",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -779,10 +779,10 @@
       "category": "בתי קפה ומזון",
       "phone": "02-6450209",
       "hours": null,
-      "image": null,
       "aliases": [
         "וופל בר"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=wafflebar.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -794,10 +794,10 @@
       "category": "אופנה והנעלה",
       "phone": "02-6720314",
       "hours": null,
-      "image": null,
       "aliases": [
         "סליו"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=celio.com",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -809,8 +809,8 @@
       "category": "הלבשה תחתונה",
       "phone": "050-9192683",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -822,8 +822,8 @@
       "category": "מחשבים וסלולר",
       "phone": "055-9393333",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -835,12 +835,12 @@
       "category": "אופנה והנעלה",
       "phone": "076-8100410",
       "hours": null,
-      "image": null,
       "aliases": [
         "we shoes",
         "ווי שוז",
         "וי שוז"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=weshoes.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -852,8 +852,8 @@
       "category": "סידורים",
       "phone": "02-6735473",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -865,8 +865,8 @@
       "category": "סופרמרקט",
       "phone": "052-6343044",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=osherad.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -878,8 +878,8 @@
       "category": "מחשבים וסלולר",
       "phone": "02-5000125",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -891,8 +891,8 @@
       "category": "בתי קפה ומזון",
       "phone": "02-6754455",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -904,8 +904,8 @@
       "category": "קוסמטיקה וטיפוח",
       "phone": "02-6718478",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -917,8 +917,8 @@
       "category": "בתי קפה ומזון",
       "phone": "052-7224722",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -930,8 +930,8 @@
       "category": "שונות",
       "phone": "02-6712121",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -943,8 +943,8 @@
       "category": "שונות",
       "phone": "052-4655422",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -956,12 +956,12 @@
       "category": "פארם",
       "phone": "077-8880950",
       "hours": null,
-      "image": null,
       "aliases": [
         "super pharm",
         "superpharm",
         "סופרפארם"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=super-pharm.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -973,8 +973,8 @@
       "category": "סידורים",
       "phone": "02-6735473",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -986,8 +986,8 @@
       "category": "ילדים ותינוקות",
       "phone": "02-5862963",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -999,11 +999,11 @@
       "category": "בתי קפה ומזון",
       "phone": null,
       "hours": null,
-      "image": null,
       "aliases": [
         "ארומה",
         "ארומה אספרסו בר"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=aroma.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1015,10 +1015,10 @@
       "category": "אופנה והנעלה",
       "phone": "02-6257841",
       "hours": null,
-      "image": null,
       "aliases": [
         "אמריקן איגל"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=ae.com",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1030,10 +1030,10 @@
       "category": "אופנה והנעלה",
       "phone": "02-5631540",
       "hours": null,
-      "image": null,
       "aliases": [
         "קרייזי ליין"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=crazyline.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1045,12 +1045,12 @@
       "category": "אופנה והנעלה",
       "phone": "02-6730834",
       "hours": null,
-      "image": null,
       "aliases": [
         "פוקס",
         "fox home",
         "פוקס הום"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=fox.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1062,11 +1062,11 @@
       "category": "אופנה והנעלה",
       "phone": "02-5918381",
       "hours": null,
-      "image": null,
       "aliases": [
         "gant",
         "גאנט"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=gant.com",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1078,12 +1078,12 @@
       "category": "מתנות וכלי בית",
       "phone": "02-6726660",
       "hours": null,
-      "image": null,
       "aliases": [
         "golf",
         "גולף",
         "גולף קו"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=golf.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1095,12 +1095,12 @@
       "category": "בתי קפה ומזון",
       "phone": "02-5367870",
       "hours": null,
-      "image": null,
       "aliases": [
         "greg",
         "גרג",
         "קפה גרג"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=cafe-greg.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1112,12 +1112,12 @@
       "category": "קוסמטיקה וטיפוח",
       "phone": "03-5420247",
       "hours": null,
-      "image": null,
       "aliases": [
         "il makeage",
         "איל מקיאג",
         "איל מקיאג'"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=ilmakiage.com",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1129,8 +1129,8 @@
       "category": "מחשבים וסלולר",
       "phone": "050-8859932",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1142,8 +1142,8 @@
       "category": "בתי קפה ומזון",
       "phone": "02-5699952",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1155,10 +1155,10 @@
       "category": "אופנה והנעלה",
       "phone": "02-5695775",
       "hours": null,
-      "image": null,
       "aliases": [
         "נויז"
       ],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1170,8 +1170,8 @@
       "category": "בתי קפה ומזון",
       "phone": "02-6450209",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1183,11 +1183,11 @@
       "category": "אופנה והנעלה",
       "phone": "02-5662196",
       "hours": null,
-      "image": null,
       "aliases": [
         "repaly",
         "ריפליי"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=replay.com",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1199,8 +1199,8 @@
       "category": "בתי קפה ומזון",
       "phone": null,
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1212,10 +1212,10 @@
       "category": "ילדים ותינוקות",
       "phone": "02-6206666",
       "hours": null,
-      "image": null,
       "aliases": [
         "סיקס פליי"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=sixplay.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1227,11 +1227,11 @@
       "category": "אופנה והנעלה",
       "phone": null,
       "hours": null,
-      "image": null,
       "aliases": [
         "24seven",
         "טוונטיפורסבן"
       ],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1243,10 +1243,10 @@
       "category": "תכשיטים ושעונים",
       "phone": "073-3733606",
       "hours": null,
-      "image": null,
       "aliases": [
         "טופ טן"
       ],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1258,10 +1258,10 @@
       "category": "אופנה והנעלה",
       "phone": "050-8326185",
       "hours": null,
-      "image": null,
       "aliases": [
         "זיפ"
       ],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1273,10 +1273,10 @@
       "category": "מחשבים וסלולר",
       "phone": "1800-071071",
       "hours": null,
-      "image": null,
       "aliases": [
         "דינמיקה"
       ],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1288,10 +1288,10 @@
       "category": "מתנות וכלי בית",
       "phone": "02-5357566",
       "hours": null,
-      "image": null,
       "aliases": [
         "פוד אפיל"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=foodappeal.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1303,8 +1303,8 @@
       "category": "בתי קפה ומזון",
       "phone": null,
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1316,8 +1316,8 @@
       "category": "רפואה",
       "phone": "077-6014383",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1329,8 +1329,8 @@
       "category": "אופטיקה",
       "phone": "02-5367302",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1342,10 +1342,10 @@
       "category": "אופנה והנעלה",
       "phone": "02-5806163",
       "hours": null,
-      "image": null,
       "aliases": [
         "אלדו"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=aldoshoes.com",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1357,8 +1357,8 @@
       "category": "ילדים ותינוקות",
       "phone": "02-6712080",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1370,8 +1370,8 @@
       "category": "ספרים וציוד משרדי",
       "phone": "02-6730794",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1383,11 +1383,11 @@
       "category": "קוסמטיקה וטיפוח",
       "phone": "054-3345096",
       "hours": null,
-      "image": null,
       "aliases": [
         "laline",
         "ללין"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=laline.co.il",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1399,8 +1399,8 @@
       "category": "ילדים ותינוקות",
       "phone": "08-6269432",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1412,8 +1412,8 @@
       "category": "אופנה והנעלה",
       "phone": "052-8526860",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1425,8 +1425,8 @@
       "category": "רפואה",
       "phone": "02-6717171",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1438,8 +1438,8 @@
       "category": "רפואה",
       "phone": "02-6241699",
       "hours": null,
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1451,11 +1451,11 @@
       "category": "קוסמטיקה וטיפוח",
       "phone": "072-2300910",
       "hours": null,
-      "image": null,
       "aliases": [
         "ספarkל",
         "ספארקל"
       ],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1467,11 +1467,11 @@
       "category": "סידורים",
       "phone": "077-4261683",
       "hours": null,
-      "image": null,
       "aliases": [
         "צ'יינג'",
         "צ'ינג'"
       ],
+      "image": null,
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1483,11 +1483,11 @@
       "category": "סופרמרקט",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "shufersal",
         "שופרסל שלי"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=shufersal.co.il",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1499,8 +1499,8 @@
       "category": "אופנה",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1512,8 +1512,8 @@
       "category": "בית ומתנות",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1525,12 +1525,12 @@
       "category": "מסעדות ובתי קפה",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "rebar",
         "re bar",
         "ריבר"
       ],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1542,11 +1542,11 @@
       "category": "בילוי ופנאי",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "aroma",
         "ארומה אספרסו בר"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=aroma.co.il",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1558,8 +1558,8 @@
       "category": "בית ומתנות",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1571,10 +1571,10 @@
       "category": "ספרים",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "steimatzky"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=steimatzky.co.il",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1586,10 +1586,10 @@
       "category": "אופנה",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "hanes"
       ],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1601,8 +1601,8 @@
       "category": "מסעדות ובתי קפה",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1614,11 +1614,11 @@
       "category": "בית ומתנות",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "laline",
         "lalin"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=laline.co.il",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1630,11 +1630,11 @@
       "category": "מסעדות ובתי קפה",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "roladin",
         "roladir"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=roladin.co.il",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1646,8 +1646,8 @@
       "category": "אופנה",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1659,8 +1659,8 @@
       "category": "אקססוריז",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1672,11 +1672,11 @@
       "category": "כללי",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "ciao bella",
         "צאו בלה"
       ],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1688,10 +1688,10 @@
       "category": "בית ומתנות",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "kravitz"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=kravitz.co.il",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1703,7 +1703,6 @@
       "category": "בילוי ופנאי",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "burger",
         "burgers bar",
@@ -1712,6 +1711,7 @@
         "בורגר סאלון",
         "בורגר"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=burgersbar.co.il",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1723,8 +1723,8 @@
       "category": "תקשורת ואלקטרוניקה",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1736,11 +1736,11 @@
       "category": "כללי",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "chooka",
         "צוקה"
       ],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1752,11 +1752,11 @@
       "category": "בילוי ופנאי",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "pizza prego",
         "pizza pergo"
       ],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1768,11 +1768,11 @@
       "category": "אופטיקה",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "optikana",
         "aptikana"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=optikana.com",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1784,10 +1784,10 @@
       "category": "אופנה",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "afrodita"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=afrodita.co.il",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1799,8 +1799,8 @@
       "category": "בית ומתנות",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1812,11 +1812,11 @@
       "category": "טיפוח וקוסמטיקה",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "il makiage",
         "il makeage"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=ilmakiage.com",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1828,8 +1828,8 @@
       "category": "תקשורת ואלקטרוניקה",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1841,8 +1841,8 @@
       "category": "שירותים",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1854,11 +1854,11 @@
       "category": "אופנה",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "moca",
         "mocca"
       ],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1870,8 +1870,8 @@
       "category": "כללי",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1883,8 +1883,8 @@
       "category": "כללי",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1896,8 +1896,8 @@
       "category": "בילוי ופנאי",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1909,8 +1909,8 @@
       "category": "בית ומתנות",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1922,8 +1922,8 @@
       "category": "כללי",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1935,8 +1935,8 @@
       "category": "בילוי ופנאי",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1948,10 +1948,10 @@
       "category": "אופנה",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "magnolia"
       ],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1963,8 +1963,8 @@
       "category": "אקססוריז",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1976,8 +1976,8 @@
       "category": "כללי",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1989,8 +1989,8 @@
       "category": "בית ומתנות",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2002,8 +2002,8 @@
       "category": "כללי",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2015,12 +2015,12 @@
       "category": "הנעלה",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "weshoes",
         "we shoes",
         "וי שוז"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=weshoes.co.il",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2032,8 +2032,8 @@
       "category": "כללי",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2045,8 +2045,8 @@
       "category": "מסעדות ובתי קפה",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2058,12 +2058,12 @@
       "category": "אופנה",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "fox",
         "fox home",
         "פוקס הום"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=fox.co.il",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2075,10 +2075,10 @@
       "category": "אופנה",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "tamnoon"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=tamnoon.co.il",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2090,10 +2090,10 @@
       "category": "אופנה",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "delta"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=delta.co.il",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2105,10 +2105,10 @@
       "category": "בילוי ופנאי",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "gravity park"
       ],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2120,11 +2120,11 @@
       "category": "אופנה",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "sabra",
         "tsabar"
       ],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2136,10 +2136,10 @@
       "category": "בילוי ופנאי",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "petmax"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=petmax.co.il",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2151,13 +2151,13 @@
       "category": "אופנה",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "onot",
         "jump",
         "ג'אמפ",
         "ג'אמפ ועונות"
       ],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2169,10 +2169,10 @@
       "category": "אופנה",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "ml"
       ],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2184,8 +2184,8 @@
       "category": "אקססוריז",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2197,8 +2197,8 @@
       "category": "כללי",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2210,8 +2210,8 @@
       "category": "כללי",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2223,8 +2223,8 @@
       "category": "שירותים",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2236,10 +2236,10 @@
       "category": "אופנה",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [
         "sacara"
       ],
+      "image": "https://www.google.com/s2/favicons?sz=128&domain=sacara.co.il",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2251,8 +2251,8 @@
       "category": "כללי",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2264,8 +2264,8 @@
       "category": "שירותים",
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
-      "image": null,
       "aliases": [],
+      "image": null,
       "url": "https://friendly-savyonim.co.il/store/"
     }
   ]

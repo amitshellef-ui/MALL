@@ -31,9 +31,10 @@
   .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;
     display:flex;gap:12px;align-items:center;cursor:pointer;transition:transform .12s,box-shadow .12s}
   .card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
-  .logo{width:54px;height:54px;border-radius:12px;flex:0 0 auto;display:flex;align-items:center;
-    justify-content:center;color:#fff;font-weight:700;font-size:1.15rem;overflow:hidden}
-  .logo img{width:100%;height:100%;object-fit:contain;background:#fff}
+  .logo{position:relative;width:54px;height:54px;border-radius:12px;flex:0 0 auto;display:flex;
+    align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:1.15rem;overflow:hidden}
+  .logo img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;
+    border-radius:inherit;z-index:1}
   .card .name{font-weight:600;font-size:1rem;line-height:1.2}
   .badge{display:inline-block;margin-top:5px;font-size:.72rem;padding:3px 9px;border-radius:999px;color:#fff}
   .badge.hadar{background:var(--hadar)} .badge.savyonim{background:var(--savyonim)}
@@ -52,8 +53,11 @@
   .row{display:flex;justify-content:space-between;gap:10px;padding:11px 2px;border-top:1px solid var(--line)}
   .row .k{color:var(--muted)} .row .v{font-weight:600;text-align:start}
   .row a.v{color:var(--brand);text-decoration:none}
+  .dlbtn{background:var(--brand);border:none;border-radius:10px;padding:11px 14px;cursor:pointer;
+    width:100%;margin-top:16px;font-size:1rem;color:#fff;font-weight:600}
+  .dlbtn:hover{background:var(--brand-2)}
   .closex{background:var(--bg);border:none;border-radius:10px;padding:10px 14px;cursor:pointer;
-    width:100%;margin-top:18px;font-size:1rem;color:var(--ink)}
+    width:100%;margin-top:10px;font-size:1rem;color:var(--ink)}
   .floorpill{font-weight:700;color:var(--brand)}
 </style>
 </head>
@@ -98,8 +102,9 @@ function initials(name){
   return ((t[0]||name)[0]||"?")+((t[1]||"")[0]||"");
 }
 function logoHTML(s,big){
-  if(s.image) return `<div class="logo"><img src="${s.image}" alt="${s.name}" onerror="this.parentNode.textContent='${initials(s.name)}';this.parentNode.style.background='${color(s.name)}'"></div>`;
-  return `<div class="logo" style="background:${color(s.name)}">${initials(s.name)}</div>`;
+  const ini=initials(s.name), col=color(s.name);
+  const img = s.image ? `<img src="${s.image}" alt="" loading="lazy" onerror="this.remove()">` : "";
+  return `<div class="logo" style="background:${col}"><span>${ini}</span>${img}</div>`;
 }
 function mallClass(k){return k==="hadar"?"hadar":"savyonim";}
 function mallName(k){return k==="hadar"?"קניון הדר":"קניון סביונים";}
@@ -140,8 +145,27 @@ function openModal(s){
       ${fRow("שעות פתיחה", s.hours)}
       ${fRow("קניון", s.mall)}
     </div>
+    ${s.image ? `<button class="dlbtn" id="dlbtn">⬇ הורדת הלוגו</button>` : ""}
     <button class="closex" onclick="closeModal()">סגירה</button>`;
+  if(s.image){ document.getElementById("dlbtn").onclick = () => downloadLogo(s.image, s.name); }
   $("#overlay").classList.add("show");
+}
+async function downloadLogo(url, name){
+  const safe = (name||"logo").replace(/[\\/:*?"<>|]/g,"").trim() || "logo";
+  try{
+    const r = await fetch(url, {mode:"cors"});
+    if(!r.ok) throw new Error("http");
+    const blob = await r.blob();
+    let ext = (blob.type.split("/")[1]||"png").split("+")[0];
+    if(ext==="x-icon"||ext==="vnd.microsoft.icon") ext="ico";
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = safe + "-לוגו." + ext;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(()=>URL.revokeObjectURL(a.href), 4000);
+  }catch(e){
+    window.open(url, "_blank");  // חסימת CORS — נפתח בטאב חדש, המשתמש שומר ידנית
+  }
 }
 function closeModal(){$("#overlay").classList.remove("show");}
 $("#overlay").onclick=e=>{if(e.target.id==="overlay")closeModal();};
