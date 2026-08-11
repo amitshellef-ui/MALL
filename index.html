@@ -107,7 +107,10 @@ function mallName(k){return k==="hadar"?"קניון הדר":"קניון סביו
 function render(){
   const q = norm($("#q").value);
   let list = STORES.filter(s => MALL==="all" || s.mall_key===MALL);
-  if(q) list = list.filter(s => norm(s.name).includes(q) || norm(s.category).includes(q));
+  if(q) list = list.filter(s => {
+    const hay = [s.name, s.category, ...(s.aliases||[])].map(norm).join(" | ");
+    return hay.includes(q);
+  });
   list.sort((a,b)=> a.name.localeCompare(b.name,"he"));
   const grid=$("#grid"); grid.innerHTML="";
   $("#empty").style.display = list.length? "none":"block";

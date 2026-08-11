@@ -16,6 +16,9 @@
 import json, re, os, sys, unicodedata, hashlib, datetime
 import requests
 from bs4 import BeautifulSoup
+from aliases_util import load_groups, aliases_for
+
+ALIAS_GROUPS = load_groups()
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, "stores.json")
@@ -199,6 +202,7 @@ def finalize(mall_key, mall_name, scraped, existing_stores):
             "phone": s.get("phone") or prev.get("phone"),
             "hours": s.get("hours") or prev.get("hours"),
             "image": s.get("image") or prev.get("image"),
+            "aliases": aliases_for(s["name"], ALIAS_GROUPS),
             "url": s.get("url") or prev.get("url"),
         }
         if not prev:
