@@ -21,7 +21,9 @@ jobs:
           python-version: "3.11"
 
       - name: התקנת תלויות
-        run: pip install requests beautifulsoup4 lxml
+        run: |
+          pip install playwright beautifulsoup4 lxml requests
+          python3 -m playwright install --with-deps chromium
 
       - name: הרצת המנוע
         run: python3 scraper.py
