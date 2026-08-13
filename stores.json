@@ -1,6 +1,6 @@
 {
-  "updated_at": null,
-  "source": "seed",
+  "updated_at": "2026-08-13T08:05:24Z",
+  "source": "scraper",
   "malls": [
     {
       "key": "hadar",
@@ -13,7 +13,7 @@
       "city": "יהוד"
     }
   ],
-  "count": 155,
+  "count": 284,
   "stores": [
     {
       "id": "8fb877d6e6",
@@ -41,7 +41,7 @@
         "adidas",
         "אדידס"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=adidas.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_349da7a6c12a4794ab60a2a492962995~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -56,7 +56,7 @@
       "aliases": [
         "בי פרש"
       ],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_af5bf89a95124812a7a97a82e9d7ef56~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -71,7 +71,7 @@
       "aliases": [
         "דלתא"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=delta.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_6e9169efd49f4a3599112126028e84c8~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -86,7 +86,7 @@
       "aliases": [
         "פליינג טייגר"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=flyingtiger.com",
+      "image": "https://static.wixstatic.com/media/5e039a_2ebbeb28fb1b4e338bd711983fbe58bd~mv2.jpg/v1/fill/w_230,h_230,al_c,lg_1,q_80,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -103,7 +103,7 @@
         "גולף",
         "גולף קידס"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=golf.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_f42950839abf42c3a0cd04cf9b64f9a7~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -116,7 +116,7 @@
       "phone": "02-6712499",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_90c9f0487c8f4ae1aff847d91e1c6b1f~mv2.jpg/v1/fill/w_230,h_230,al_c,lg_1,q_80,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -133,7 +133,7 @@
         "הוניגמן",
         "הוניגמן קידס"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=honigman.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_cc9b37134c7a40c2bd96cc4b479454cb~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -146,7 +146,7 @@
       "phone": "02-6526255",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_802e90890b6c4d64ae2420d135ec646f~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -159,7 +159,7 @@
       "phone": "050-7161776",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_4778f52713274a68a4e9aa80a5119511~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -175,7 +175,7 @@
         "nike",
         "נייקי"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=nike.com",
+      "image": "https://static.wixstatic.com/media/e93e5c_20f27eec4b724ce4b19c284f7fc1b45a~mv2.jpg/v1/fill/w_230,h_230,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -188,7 +188,7 @@
       "phone": "058-6101777",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_44030471b33746cc915536990ba257ee~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -203,7 +203,7 @@
       "aliases": [
         "פפאיה"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=papaya.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_511f9f96746349efb494e4c069fef431~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -219,7 +219,7 @@
         "roladir",
         "רולדין"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=roladin.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_b61121d7278e4527b220d15e25023527~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -234,7 +234,7 @@
       "aliases": [
         "סקארה"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=sacara.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_f3163e662ec249d59aee1dffd03ad783~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -249,7 +249,7 @@
       "aliases": [
         "סבון"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=sabon.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_599f94bf01c84aa5a3ec9a7bffe62a49~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -264,7 +264,7 @@
       "aliases": [
         "טבע נאות"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=naot.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_db99f4665fcf4e6bb6fcb5e9fcafb8c5~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -277,7 +277,7 @@
       "phone": "050-6452626",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_0863d7dbde044f4e9f1aee8862035545~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -292,7 +292,7 @@
       "aliases": [
         "בי גוד"
       ],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_fa0c54523eb543efb52c781ac3cab575~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -309,7 +309,7 @@
         "אי פוסט",
         "איפוסט"
       ],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_279002fdefaf453c9338a9ef55cb3c14~mv2.png/v1/fill/w_171,h_188,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -326,7 +326,7 @@
         "פוקס",
         "פוקס הום"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=fox.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_42977be76ffa4c72a9b199979e6dd7a0~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -343,7 +343,7 @@
         "ריבר",
         "רי באר"
       ],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_5ec9f67794f3407d9a116afd7cd5cc79~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -356,7 +356,7 @@
       "phone": "02-5719871",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/e93e5c_18546a3b9d0d47c4b157a254ae74ba15~mv2.jpg/v1/fill/w_234,h_230,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -372,7 +372,7 @@
         "optikana",
         "aptikana"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=optikana.com",
+      "image": "https://static.wixstatic.com/media/5e039a_666db88812fa4f98870821cc67a88ba7~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -385,7 +385,7 @@
       "phone": "073-2022527",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_dad3e4c281e3453a8dd7c56b9e004aa9~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -398,7 +398,7 @@
       "phone": "02-6736755",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/e93e5c_c2f0541d57494c119ef54aec37278c3c~mv2.jpg/v1/fill/w_230,h_230,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -411,7 +411,7 @@
       "phone": "02-6728148",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_4fd5603637214ed1b25b93c1ccf798be~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -427,7 +427,7 @@
         "מניה ג'ינס",
         "מאניה ג'ינס"
       ],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_0db5d44896804b2a97c7786ff551bba4~mv2.webp/v1/fill/w_241,h_230,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.webp",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -440,7 +440,7 @@
       "phone": "052-2756545",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/e93e5c_1de83dee3a774e679857cd416a03eca1~mv2.jpeg/v1/fill/w_230,h_230,al_c,lg_1,q_80,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpeg",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -453,7 +453,7 @@
       "phone": "02-6502167",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_301626f45c5d41eb9f425a235b13ee45~mv2.png/v1/fill/w_227,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -466,7 +466,7 @@
       "phone": "02-3750950",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_ad5744c0fcf440d88f812c1229a7d288~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -479,7 +479,7 @@
       "phone": "02-6725093",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_c39a2a912cb9435dad780147d8d12c5c~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -492,7 +492,7 @@
       "phone": "054-5722859",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_2ee808311e264999b7a4cf7fee4adbde~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -505,7 +505,7 @@
       "phone": "02-6730818",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/e93e5c_1f36b2f453f047818bd5d51e7c174092~mv2.jpg/v1/fill/w_230,h_230,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -533,7 +533,7 @@
       "aliases": [
         "אפרודיטה"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=afrodita.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_e00a7804965a4bf788f3eb0a54521988~mv2.png/v1/fill/w_216,h_216,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -553,7 +553,7 @@
         "בורגר סאלון",
         "בורגר"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=burgersbar.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_88cd7ac460cf4430a04854fa41b93935~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -568,7 +568,7 @@
       "aliases": [
         "אמפוריום"
       ],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_5093e9d7ed444487a2def673b738607c~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -583,7 +583,7 @@
       "aliases": [
         "פוט לוקר"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=footlocker.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_9042e9ef273a42b58f084cebfe670f0d~mv2.jpg/v1/fill/w_230,h_230,al_c,lg_1,q_80,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -604,7 +604,7 @@
         "golf co",
         "גולף קו"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=golf.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_da3ac3c3bf6e4ecfa2db9f5ba2fb821a~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -619,7 +619,7 @@
       "aliases": [
         "גולברי"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=golbary.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_a3f538a80b7f42db8183e8cacaf0fc1b~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -634,7 +634,7 @@
       "aliases": [
         "הודיס"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=hoodies.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_3d004e0cb4234e2199e0db14728a67a2~mv2.png/v1/fill/w_231,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -649,7 +649,7 @@
       "aliases": [
         "מאזי פריז"
       ],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_450d4276e73541d3a7c65625a1583a34~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -664,7 +664,7 @@
       "aliases": [
         "מגנוליה"
       ],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_12a99df833cc4bc4b34d4434710ebcf5~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -677,7 +677,7 @@
       "phone": "053-8320666",
       "hours": null,
       "aliases": [],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=nimrod-shoes.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_00a13e57709747e4bc1a6be06e7be756~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -690,7 +690,7 @@
       "phone": "058-4726949",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_0ae2132f22be4882bc11bfb0ef3e4a19~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -705,7 +705,7 @@
       "aliases": [
         "פרטנר"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=partner.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_851e612ad30b4766aab65497882a13fc~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -720,7 +720,7 @@
       "aliases": [
         "רנואר"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=renuar.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_b144a755e4fe420badbc3c7bb21c1605~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -733,7 +733,7 @@
       "phone": "052-6663889",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_1edeb04bf4d64529a6c52811e0a310e4~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -749,7 +749,7 @@
         "טי בר",
         "תה בר"
       ],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_091dd9d1fc444e9589d5142d7e2648df~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -767,7 +767,7 @@
         "הצ'ילדרנס פלייס",
         "צ'ילדרן פלייס"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=childrensplace.com",
+      "image": "https://static.wixstatic.com/media/5e039a_ee4f3db6c58a48398224c8b341c95d20~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -782,7 +782,7 @@
       "aliases": [
         "וופל בר"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=wafflebar.co.il",
+      "image": "https://static.wixstatic.com/media/e93e5c_3ae1d707483f4756a86ca1cf31839e67~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -797,7 +797,7 @@
       "aliases": [
         "סליו"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=celio.com",
+      "image": "https://static.wixstatic.com/media/5e039a_e3f8691b652e48b8a1b5251323052ff0~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -810,7 +810,7 @@
       "phone": "050-9192683",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_6cd06dca7c6640afb0e8d8c2cb530b97~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -823,7 +823,7 @@
       "phone": "055-9393333",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_6b7d98b3c48048658fa0467385b22df4~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -840,7 +840,7 @@
         "ווי שוז",
         "וי שוז"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=weshoes.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_984ee7ead2ea4d5fb51aff91d1db924e~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -853,7 +853,7 @@
       "phone": "02-6735473",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_301626f45c5d41eb9f425a235b13ee45~mv2.png/v1/fill/w_227,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -866,7 +866,7 @@
       "phone": "052-6343044",
       "hours": null,
       "aliases": [],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=osherad.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_f6a8b3cd54f6414393894c955b0ae628~mv2.png/v1/fill/w_213,h_210,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -879,7 +879,7 @@
       "phone": "02-5000125",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_214daf69e2e841f280de94486c4bf00e~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -892,7 +892,7 @@
       "phone": "02-6754455",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_27acb5958e1745478e8abe6737114d32~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -905,7 +905,7 @@
       "phone": "02-6718478",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_0f90fb5165f5469091abf3ad91e97463~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -918,7 +918,7 @@
       "phone": "052-7224722",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_cb95e0c4d3d44818996bb34afb85d1b7~mv2.jpg/v1/fill/w_230,h_230,al_c,lg_1,q_80,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -944,7 +944,7 @@
       "phone": "052-4655422",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_2f1d840447714aedacd63f109e19aa97~mv2.jpg/v1/fill/w_227,h_266,al_c,lg_1,q_80,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -961,7 +961,7 @@
         "superpharm",
         "סופרפארם"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=super-pharm.co.il",
+      "image": "https://static.wixstatic.com/media/e93e5c_70d6a1c7b60043c0baf4b6bf476b2be0~mv2.png/v1/fill/w_227,h_255,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -974,7 +974,7 @@
       "phone": "02-6735473",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_301626f45c5d41eb9f425a235b13ee45~mv2.png/v1/fill/w_227,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -987,7 +987,7 @@
       "phone": "02-5862963",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_7ecb873990a64781ad8bcebaf2c55e1b~mv2.jpg/v1/fill/w_230,h_230,al_c,lg_1,q_80,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1003,7 +1003,7 @@
         "ארומה",
         "ארומה אספרסו בר"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=aroma.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_15608191a79d4202896158c957f5b41f~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1018,7 +1018,7 @@
       "aliases": [
         "אמריקן איגל"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=ae.com",
+      "image": "https://static.wixstatic.com/media/5e039a_ea9a9d61c1ac48f5961dcc2f6810ee70~mv2.png/v1/fill/w_270,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1033,7 +1033,7 @@
       "aliases": [
         "קרייזי ליין"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=crazyline.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_3dcb9a01ee2a45e683be162b0086a923~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1050,7 +1050,7 @@
         "fox home",
         "פוקס הום"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=fox.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_42977be76ffa4c72a9b199979e6dd7a0~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1066,7 +1066,7 @@
         "gant",
         "גאנט"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=gant.com",
+      "image": "https://static.wixstatic.com/media/5e039a_2a0e95cd6971401c9e5d1e67ab091df9~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1083,7 +1083,7 @@
         "גולף",
         "גולף קו"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=golf.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_da3ac3c3bf6e4ecfa2db9f5ba2fb821a~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1100,7 +1100,7 @@
         "גרג",
         "קפה גרג"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=cafe-greg.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_9496447ffb6d418ebe83f6b1eeaf9708~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1117,7 +1117,7 @@
         "איל מקיאג",
         "איל מקיאג'"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=ilmakiage.com",
+      "image": "https://static.wixstatic.com/media/5e039a_249740f23bf84188bba2f2b1f9b2e5d0~mv2.jpg/v1/fill/w_230,h_230,al_c,lg_1,q_80,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1130,7 +1130,7 @@
       "phone": "050-8859932",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_db34f5935b8e41eabc69f90b4a7f0c14~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1143,7 +1143,7 @@
       "phone": "02-5699952",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_4204c4561e9240e5a7c356f4a34d097e~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1158,7 +1158,7 @@
       "aliases": [
         "נויז"
       ],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_48d022b901c74aa6a93fdb22f9eef8c1~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1171,7 +1171,7 @@
       "phone": "02-6450209",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_eb975ff1005e47a68a737911f4be901c~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1187,7 +1187,7 @@
         "repaly",
         "ריפליי"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=replay.com",
+      "image": "https://static.wixstatic.com/media/5e039a_4533aca7c8264a4e803997db7262f669~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1200,7 +1200,7 @@
       "phone": null,
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_f690a30b495d498d8394065ac5f685dc~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1215,7 +1215,7 @@
       "aliases": [
         "סיקס פליי"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=sixplay.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_12f6f73aa40048048f64faf4237a904e~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1231,7 +1231,7 @@
         "24seven",
         "טוונטיפורסבן"
       ],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_27a4ff9b46f24346aabe457e5c1710a6~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1246,7 +1246,7 @@
       "aliases": [
         "טופ טן"
       ],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_fcdaf424c35f42aab6f4d90e2dac0ae3~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1261,7 +1261,7 @@
       "aliases": [
         "זיפ"
       ],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_fdee156de29f4bcea1324a8ddedff934~mv2.jpg/v1/fill/w_230,h_230,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1276,7 +1276,7 @@
       "aliases": [
         "דינמיקה"
       ],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_d92e22a2e5bf4b1ba668b9e365f96f7b~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1291,7 +1291,7 @@
       "aliases": [
         "פוד אפיל"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=foodappeal.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_475366cb73cc4a4b930da7cc8c12a7cf~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1304,7 +1304,7 @@
       "phone": null,
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_e1a34e7b528347a4a1a2c275ca9534f7~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1317,7 +1317,7 @@
       "phone": "077-6014383",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_7d86bfa5962c483b903eb59662920b62~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1330,7 +1330,7 @@
       "phone": "02-5367302",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_eb9412cc8b264a4f9b69211b5f58d24b~mv2.jpg/v1/fill/w_230,h_230,al_c,lg_1,q_80,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1345,7 +1345,7 @@
       "aliases": [
         "אלדו"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=aldoshoes.com",
+      "image": "https://static.wixstatic.com/media/5e039a_0ef109b4bb064338bd729ba7af7401ad~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1358,7 +1358,7 @@
       "phone": "02-6712080",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_44e84d898c2d41baaa36da32b6314e69~mv2.jpg/v1/fill/w_230,h_230,al_c,lg_1,q_80,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1371,7 +1371,7 @@
       "phone": "02-6730794",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_7acddcfe33914d0f8b854e588fd34ceb~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1387,7 +1387,7 @@
         "laline",
         "ללין"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=laline.co.il",
+      "image": "https://static.wixstatic.com/media/5e039a_4596480e79fb49829a114c7fa1b5c0ae~mv2.png/v1/fill/w_227,h_237,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1400,7 +1400,7 @@
       "phone": "08-6269432",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_126d1f4eb2f446e6b6e2eea8c5a06431~mv2.jpg/v1/fill/w_168,h_168,al_c,lg_1,q_80,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1426,7 +1426,7 @@
       "phone": "02-6717171",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_f1a5108a2def45f9ab7b3750d9d89d4b~mv2.png/v1/fill/w_276,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1439,7 +1439,7 @@
       "phone": "02-6241699",
       "hours": null,
       "aliases": [],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/5e039a_301626f45c5d41eb9f425a235b13ee45~mv2.png/v1/fill/w_227,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1471,7 +1471,7 @@
         "צ'יינג'",
         "צ'ינג'"
       ],
-      "image": null,
+      "image": "https://static.wixstatic.com/media/e93e5c_44cc9c2be0394b6f992e76bd8b673ef3~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1487,7 +1487,7 @@
         "shufersal",
         "שופרסל שלי"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=shufersal.co.il",
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/04/SS_376x137.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1500,7 +1500,7 @@
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
       "aliases": [],
-      "image": null,
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/03/dana_ashkenazi_logo376x137.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1513,7 +1513,7 @@
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
       "aliases": [],
-      "image": null,
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2022/07/havatneomi376.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1530,7 +1530,7 @@
         "re bar",
         "ריבר"
       ],
-      "image": null,
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2016/10/rebar376-1.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1546,7 +1546,7 @@
         "aroma",
         "ארומה אספרסו בר"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=aroma.co.il",
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2016/12/aroma376.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1559,7 +1559,7 @@
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
       "aliases": [],
-      "image": null,
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2018/02/bustan376-1.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1574,7 +1574,7 @@
       "aliases": [
         "steimatzky"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=steimatzky.co.il",
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/04/Stimatzki_376x1371.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1602,7 +1602,7 @@
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
       "aliases": [],
-      "image": null,
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2024/10/%D7%9C%D7%95%D7%92%D7%95-%D7%97%D7%A0%D7%95%D7%AA-%D7%94%D7%98%D7%97%D7%A0%D7%94-02.jpg",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1618,7 +1618,7 @@
         "laline",
         "lalin"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=laline.co.il",
+      "image": "https://friendly-ganyavne.co.il/wp-content/uploads/2015/03/lalin_logo376x137.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1634,7 +1634,7 @@
         "roladin",
         "roladir"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=roladin.co.il",
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2016/08/roladin376.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1647,7 +1647,7 @@
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
       "aliases": [],
-      "image": null,
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/03/habursa_logo376x137.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1660,7 +1660,7 @@
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
       "aliases": [],
-      "image": null,
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2017/01/tik376.jpg",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1676,7 +1676,7 @@
         "ciao bella",
         "צאו בלה"
       ],
-      "image": null,
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2016/12/%D7%A6%D7%90%D7%95%D7%91%D7%9C%D7%94376.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1691,7 +1691,7 @@
       "aliases": [
         "kravitz"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=kravitz.co.il",
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/04/kravitz_logo376x137.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1711,7 +1711,7 @@
         "בורגר סאלון",
         "בורגר"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=burgersbar.co.il",
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2016/11/burger376.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1740,7 +1740,7 @@
         "chooka",
         "צוקה"
       ],
-      "image": null,
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/03/chooka_376x1371.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1756,7 +1756,7 @@
         "pizza prego",
         "pizza pergo"
       ],
-      "image": null,
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2016/12/prego376.jpg",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1772,7 +1772,7 @@
         "optikana",
         "aptikana"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=optikana.com",
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/03/opticana376-1.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1787,7 +1787,7 @@
       "aliases": [
         "afrodita"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=afrodita.co.il",
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/03/Afrodita_376x1371.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1800,7 +1800,7 @@
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
       "aliases": [],
-      "image": null,
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2018/10/tzamtzam376.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1816,7 +1816,7 @@
         "il makiage",
         "il makeage"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=ilmakiage.com",
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/03/IL-BIG.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1842,7 +1842,7 @@
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
       "aliases": [],
-      "image": null,
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/04/16002123_LOGO_HANUYUT_101X1512.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1858,7 +1858,7 @@
         "moca",
         "mocca"
       ],
-      "image": null,
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2018/06/moca376.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1936,7 +1936,7 @@
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
       "aliases": [],
-      "image": null,
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/04/OlamHamamtakim_376x1371.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1951,7 +1951,7 @@
       "aliases": [
         "magnolia"
       ],
-      "image": null,
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/04/magnolia_logo376x137.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -1990,7 +1990,7 @@
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
       "aliases": [],
-      "image": null,
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2021/06/noy376.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2020,7 +2020,7 @@
         "we shoes",
         "וי שוז"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=weshoes.co.il",
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2026/01/%D7%9C%D7%95%D7%92%D7%95-%D7%97%D7%A0%D7%95%D7%AA-WE-2-01.jpg",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2063,7 +2063,7 @@
         "fox home",
         "פוקס הום"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=fox.co.il",
+      "image": "https://friendly-ganyavne.co.il/wp-content/uploads/2015/03/FOX_logo376x137.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2078,7 +2078,7 @@
       "aliases": [
         "tamnoon"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=tamnoon.co.il",
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2021/06/tamnoon376.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2093,7 +2093,7 @@
       "aliases": [
         "delta"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=delta.co.il",
+      "image": "https://friendly-ganyavne.co.il/wp-content/uploads/2015/03/Delta_logo376x137.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2108,7 +2108,7 @@
       "aliases": [
         "gravity park"
       ],
-      "image": null,
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2023/08/graviti-376.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2124,7 +2124,7 @@
         "sabra",
         "tsabar"
       ],
-      "image": null,
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2016/12/%D7%A6%D7%91%D7%A8%D7%94376-1.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2139,7 +2139,7 @@
       "aliases": [
         "petmax"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=petmax.co.il",
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2024/07/%D7%9C%D7%95%D7%92%D7%95-%D7%97%D7%A0%D7%95%D7%AA-%D7%A4%D7%98-%D7%9E%D7%A7%D7%A1-02.jpg",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2157,7 +2157,7 @@
         "ג'אמפ",
         "ג'אמפ ועונות"
       ],
-      "image": null,
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2019/09/ONOT-BIG-1.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2172,7 +2172,7 @@
       "aliases": [
         "ml"
       ],
-      "image": null,
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/04/ml376.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2185,7 +2185,7 @@
       "phone": null,
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
       "aliases": [],
-      "image": null,
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2022/02/hastock376.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2239,7 +2239,7 @@
       "aliases": [
         "sacara"
       ],
-      "image": "https://www.google.com/s2/favicons?sz=128&domain=sacara.co.il",
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/11/sacara_376x137.png",
       "url": "https://friendly-savyonim.co.il/store/"
     },
     {
@@ -2266,6 +2266,1969 @@
       "hours": "א'-ה' 9:00-21:30, ו' 9:00-15:00, מוצ\"ש 19:00-23:00",
       "aliases": [],
       "image": null,
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "0d0d8a9f45",
+      "name": "האינסטגרם של קניון הדר",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_41a486e342bf44fb8bd0d4cf98c4d07a~mv2.png/v1/fill/w_40,h_40,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5e039a_41a486e342bf44fb8bd0d4cf98c4d07a~mv2.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "c8cfe1856a",
+      "name": "הפייסבוק של קניון הדר",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_f427498e44984538b15a719279baf459~mv2.png/v1/fill/w_40,h_40,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5e039a_f427498e44984538b15a719279baf459~mv2.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "6e2c7b9add",
+      "name": "הטיקטוק של קניון הדר",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_855ac07b5e5547dabe5e863612afbe2f~mv2.png/v1/fill/w_40,h_40,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5e039a_855ac07b5e5547dabe5e863612afbe2f~mv2.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "556ae88941",
+      "name": "וואסצאפ החדשות של קניון הדר",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_f8398eb3a4994b44a1646f8b9bf56ee6~mv2.png/v1/fill/w_40,h_40,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5e039a_f8398eb3a4994b44a1646f8b9bf56ee6~mv2.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "c557ab3709",
+      "name": "לוגו של קניון הדר",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_503fd9aeec2447039f89bce87ed8108b~mv2.png/v1/fill/w_175,h_53,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5e039a_503fd9aeec2447039f89bce87ed8108b~mv2.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "3aaefbbc53",
+      "name": "דיאנה תכשיטים ופירסינג",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/e93e5c_6894f22f2e2340fc84f0a35004bdefdd~mv2.jpg/v1/fill/w_230,h_230,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "75f75d68c2",
+      "name": "Adidas Outlet - אדידס אווטלט",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "adidas",
+        "אדידס"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_349da7a6c12a4794ab60a2a492962995~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "02db16f351",
+      "name": "B-FRESH - בי פרש",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "b-fresh",
+        "b fresh",
+        "בי פרש"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_af5bf89a95124812a7a97a82e9d7ef56~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "6162d5ec81",
+      "name": "Delta - דלתא",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "delta",
+        "דלתא"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_6e9169efd49f4a3599112126028e84c8~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "e8318ed2f6",
+      "name": "Flying Tiger - פליינג טייגר",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "flying tiger",
+        "פליינג טייגר"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_2ebbeb28fb1b4e338bd711983fbe58bd~mv2.jpg/v1/fill/w_230,h_230,al_c,lg_1,q_80,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "321aa6a135",
+      "name": "GOLF & KIDS - גולף אנד קידס",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "golf",
+        "גולף",
+        "golf&kids",
+        "golf kids",
+        "גולף קידס"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_f42950839abf42c3a0cd04cf9b64f9a7~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "6747d2024e",
+      "name": "Gali - גלי",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_90c9f0487c8f4ae1aff847d91e1c6b1f~mv2.jpg/v1/fill/w_230,h_230,al_c,lg_1,q_80,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "e045f435c9",
+      "name": "Honigman-Kids - הוניגמן ילדים",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "honigman",
+        "honigman kids",
+        "הוניגמן",
+        "הוניגמן קידס"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_cc9b37134c7a40c2bd96cc4b479454cb~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "63936263d8",
+      "name": "Lord Kitsch - לורד קיטש",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_802e90890b6c4d64ae2420d135ec646f~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "07b7d82402",
+      "name": "MOR ADIKA - מור עדיקה",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_4778f52713274a68a4e9aa80a5119511~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "f4be7331aa",
+      "name": "Nike Outlet - נייק אוואטלט",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "nike",
+        "נייקי"
+      ],
+      "image": "https://static.wixstatic.com/media/e93e5c_20f27eec4b724ce4b19c284f7fc1b45a~mv2.jpg/v1/fill/w_230,h_230,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "81fabbc3f4",
+      "name": "OSHER ELIASI  - אושר אליאסי",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_44030471b33746cc915536990ba257ee~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "c3e6683a84",
+      "name": "Papaya - פאפיה",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "papaya",
+        "פפאיה"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_511f9f96746349efb494e4c069fef431~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "710e03f93b",
+      "name": "ROLADIN - רולדין",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "roladin",
+        "roladir",
+        "רולדין"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_b61121d7278e4527b220d15e25023527~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "1bcc49acdd",
+      "name": "SACARA - סקארה",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "sacara",
+        "סקארה"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_f3163e662ec249d59aee1dffd03ad783~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "0ad28a869d",
+      "name": "Sabon - סבון",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "sabon",
+        "סבון"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_599f94bf01c84aa5a3ec9a7bffe62a49~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "8bc235c35e",
+      "name": "Teva Naot - טבע נאות",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "teva naot",
+        "טבע נאות"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_db99f4665fcf4e6bb6fcb5e9fcafb8c5~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "1149aeeebb",
+      "name": "VAN SEES 26 - ואן סיס 26",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_0863d7dbde044f4e9f1aee8862035545~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "e8c612f28b",
+      "name": "be-good ביגוד",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "be-good",
+        "be good",
+        "בי גוד"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_fa0c54523eb543efb52c781ac3cab575~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "1fd67c0417",
+      "name": "e-post אי-פוסט",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "e-post",
+        "epost",
+        "e post",
+        "אי פוסט",
+        "איפוסט"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_279002fdefaf453c9338a9ef55cb3c14~mv2.png/v1/fill/w_171,h_188,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "0bd0536445",
+      "name": "fox home - פוקס הום",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "fox",
+        "פוקס",
+        "fox home",
+        "פוקס הום"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_42977be76ffa4c72a9b199979e6dd7a0~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "ecd4a1cace",
+      "name": "rebar - ריבר",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "rebar",
+        "re bar",
+        "ריבר",
+        "רי באר"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_5ec9f67794f3407d9a116afd7cd5cc79~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "ce54d68ae1",
+      "name": "מאניה ג'ינס - MANIA JEANS",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "mania jeans",
+        "מניה ג'ינס",
+        "מאניה ג'ינס"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_0db5d44896804b2a97c7786ff551bba4~mv2.webp/v1/fill/w_241,h_230,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.webp",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "e0d3cdb471",
+      "name": "מחסני חשמל דיגיטל",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/e93e5c_1de83dee3a774e679857cd416a03eca1~mv2.jpeg/v1/fill/w_230,h_230,al_c,lg_1,q_80,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpeg",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "994ef3c8a6",
+      "name": "54 OUTLET",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_92cee13349454c3ca4034e0280ede4ed~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "fac63c1a11",
+      "name": "Afrodita - אפרודיטה",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "afrodita",
+        "אפרודיטה"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_e00a7804965a4bf788f3eb0a54521988~mv2.png/v1/fill/w_216,h_216,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "33016b0b39",
+      "name": "Burgers Bar - בורגרס בר",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "burger",
+        "burgers bar",
+        "burger saloon",
+        "בורגרס בר",
+        "בורגר סלון",
+        "בורגר סאלון",
+        "בורגר"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_88cd7ac460cf4430a04854fa41b93935~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "785d26c494",
+      "name": "Emporium - אמפוריום",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "emporium",
+        "אמפוריום"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_5093e9d7ed444487a2def673b738607c~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "649fcafede",
+      "name": "Foot Locker - פוט לוקר",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "foot locker",
+        "פוט לוקר"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_9042e9ef273a42b58f084cebfe670f0d~mv2.jpg/v1/fill/w_230,h_230,al_c,lg_1,q_80,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "6bfb714129",
+      "name": "GOLF - גולף",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "golf",
+        "גולף"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_3f198a7f036e48c4b57bf10bdd2279a8~mv2.png/v1/fill/w_182,h_182,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "d2754d589e",
+      "name": "Golbary - גולברי",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "golbary",
+        "גולברי"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_a3f538a80b7f42db8183e8cacaf0fc1b~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "60b8cdd5ef",
+      "name": "Hoodies - הודיס",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "hoodies",
+        "הודיס"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_3d004e0cb4234e2199e0db14728a67a2~mv2.png/v1/fill/w_231,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "b208272c64",
+      "name": "MAZI PARIZ - מזי פריז",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "mazi pariz",
+        "מאזי פריז"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_450d4276e73541d3a7c65625a1583a34~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "c35e615fea",
+      "name": "Magnolia - מגנוליה",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "magnolia",
+        "מגנוליה"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_12a99df833cc4bc4b34d4434710ebcf5~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "72c60ab3a6",
+      "name": "Nimrod - נעלי נמרוד",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_00a13e57709747e4bc1a6be06e7be756~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "16133d3e20",
+      "name": "Olivia Estilo - אוליביה אסטילו",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_0ae2132f22be4882bc11bfb0ef3e4a19~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "8564d61383",
+      "name": "Partner - פרטנר",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "partner",
+        "פרטנר"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_851e612ad30b4766aab65497882a13fc~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "334cf9ba3e",
+      "name": "Renuar - רנואר",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "renuar",
+        "רנואר"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_b144a755e4fe420badbc3c7bb21c1605~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "1f3dd65cfa",
+      "name": "SILVERIO - סילבריו",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_1edeb04bf4d64529a6c52811e0a310e4~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "54df029c7d",
+      "name": "TEA BAR - טי בר",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "tea bar",
+        "טי בר",
+        "תה בר"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_091dd9d1fc444e9589d5142d7e2648df~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "e5b9bc0dac",
+      "name": "The Children's Place\n- צ'ילדרנס פלייס",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "the children's place",
+        "childrens place",
+        "children place",
+        "הצ'ילדרנס פלייס",
+        "צ'ילדרן פלייס"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_ee4f3db6c58a48398224c8b341c95d20~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "a93b32104d",
+      "name": "Waffle Bar - וופל בר",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "waffle bar",
+        "וופל בר"
+      ],
+      "image": "https://static.wixstatic.com/media/e93e5c_3ae1d707483f4756a86ca1cf31839e67~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "c83dceaef1",
+      "name": "celio סליו",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "celio",
+        "סליו"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_e3f8691b652e48b8a1b5251323052ff0~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "56c374c115",
+      "name": "femina - פמינה",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_6cd06dca7c6640afb0e8d8c2cb530b97~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "bcc5527964",
+      "name": "iToch - 'אי טאץ",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_6b7d98b3c48048658fa0467385b22df4~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "6b30d076e1",
+      "name": "weshoes - ווישוז",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "weshoes",
+        "we shoes",
+        "ווי שוז",
+        "וי שוז"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_984ee7ead2ea4d5fb51aff91d1db924e~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "90dd67aae8",
+      "name": "אברהם החייט - מתפרה",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_301626f45c5d41eb9f425a235b13ee45~mv2.png/v1/fill/w_227,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "ef5e962298",
+      "name": "מטי מועדוני כושר",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_637ccd2064ac4ab88a0f91c5c4361f93~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "b3b4711fb2",
+      "name": "AROMA - ארומה",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "aroma",
+        "ארומה",
+        "ארומה אספרסו בר"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_15608191a79d4202896158c957f5b41f~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "23979081ac",
+      "name": "American Eagle - אמריקן איגל",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "american eagle",
+        "אמריקן איגל"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_ea9a9d61c1ac48f5961dcc2f6810ee70~mv2.png/v1/fill/w_270,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "e78ae0f340",
+      "name": "Crazy Line - קרייזי ליין",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "crazy line",
+        "קרייזי ליין"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_3dcb9a01ee2a45e683be162b0086a923~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "b392a45db0",
+      "name": "FOX - פוקס",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "fox",
+        "פוקס"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_6fdc9d72e0b1461aa613613633426e62~mv2.jpg/v1/fill/w_230,h_230,al_c,lg_1,q_80,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "b79a9cbba4",
+      "name": "GANT OUTLET - גאנט אווטלט",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "gant",
+        "gant outlet",
+        "גאנט"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_2a0e95cd6971401c9e5d1e67ab091df9~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "e33b384e80",
+      "name": "Greg Cafe - קפה גרג",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "greg",
+        "greg cafe",
+        "גרג",
+        "קפה גרג"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_9496447ffb6d418ebe83f6b1eeaf9708~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "a46f743826",
+      "name": "IL MAKIAGE - איל מקיאג",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "il makiage",
+        "il makeage",
+        "איל מקיאג",
+        "איל מקיאג'"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_249740f23bf84188bba2f2b1f9b2e5d0~mv2.jpg/v1/fill/w_230,h_230,al_c,lg_1,q_80,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "f1df6aeabc",
+      "name": "MOBI CELL - מובי סל",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_db34f5935b8e41eabc69f90b4a7f0c14~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "2136d1ec57",
+      "name": "NEI GONG - ניי גונג",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_4204c4561e9240e5a7c356f4a34d097e~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "dec677aded",
+      "name": "Noizz - נויז",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "noizz",
+        "נויז"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_48d022b901c74aa6a93fdb22f9eef8c1~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "a2ca372cd0",
+      "name": "PIZZA KAPREZA - פיצה קפרזה",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_eb975ff1005e47a68a737911f4be901c~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "d885df5bdc",
+      "name": "REPALY - ריפליי",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "replay",
+        "repaly",
+        "ריפליי"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_4533aca7c8264a4e803997db7262f669~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "c4f3f8ae55",
+      "name": "Rolly - רולי",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_f690a30b495d498d8394065ac5f685dc~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "efea98ff2e",
+      "name": "SIX PLAY - סיקס פליי",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "six play",
+        "סיקס פליי"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_12f6f73aa40048048f64faf4237a904e~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "60ef5e9f9b",
+      "name": "TWENTYFOURSEVEN - טוונטיפורסבן",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "twentyfourseven",
+        "24seven",
+        "טוונטיפורסבן"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_27a4ff9b46f24346aabe457e5c1710a6~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "99ebe11841",
+      "name": "Top Ten - טופ טן",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "top ten",
+        "טופ טן"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_fcdaf424c35f42aab6f4d90e2dac0ae3~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "a1ba527d74",
+      "name": "ZIP זיפ",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "zip",
+        "זיפ"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_fdee156de29f4bcea1324a8ddedff934~mv2.jpg/v1/fill/w_230,h_230,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "5673b78af3",
+      "name": "dynamica - דינמיקה",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "dynamica",
+        "דינמיקה"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_d92e22a2e5bf4b1ba668b9e365f96f7b~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "3614c46620",
+      "name": "food appeal - פוד אפיל",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "food appeal",
+        "פוד אפיל"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_475366cb73cc4a4b930da7cc8c12a7cf~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "66325e26f8",
+      "name": "italia 38 - איטליה 38",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_e1a34e7b528347a4a1a2c275ca9534f7~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "b7b320fa1e",
+      "name": "אלדו נעליים",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "aldo",
+        "אלדו"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_0ef109b4bb064338bd729ba7af7401ad~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "4c724965a4",
+      "name": "ללין - Lalin",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "laline",
+        "lalin",
+        "ללין"
+      ],
+      "image": "https://static.wixstatic.com/media/5e039a_4596480e79fb49829a114c7fa1b5c0ae~mv2.png/v1/fill/w_227,h_237,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "e5278d3008",
+      "name": "מי-טל הקסם שבעיצוב",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/e93e5c_2429896e67644497923f354ad30c385e~mv2.jpg/v1/fill/w_230,h_230,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "88c4afb9b6",
+      "name": "ספרקל - מכון יופי וקוסמטיקה",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_549041a29e39412d93ba14beda094cba~mv2.jpg/v1/fill/w_230,h_230,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "825dfe37ee",
+      "name": "צ'יינג' היובל - CHANGE",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "change",
+        "צ'יינג'",
+        "צ'ינג'"
+      ],
+      "image": "https://static.wixstatic.com/media/e93e5c_44cc9c2be0394b6f992e76bd8b673ef3~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "f78fecb1fb",
+      "name": "לוגו שקוף עברית.png",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_7398198e8a4149179bad0b25856b54c4~mv2.png/v1/fill/w_218,h_84,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%9C%D7%95%D7%92%D7%95%20%D7%A9%D7%A7%D7%95%D7%A3%20%D7%A2%D7%91%D7%A8%D7%99%D7%AA.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "532c1741d7",
+      "name": "קניון הדר - הקניון של הירושלמים",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_42a2619fbed742e1837b09949ada07c0~mv2.png/v1/fill/w_205,h_75,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Layer%201_edited.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "7e15c07d59",
+      "name": "לוגו קניון הדר",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/e93e5c_977b2929f27d451aaba8ca59bd3ca68a~mv2.png/v1/crop/x_0,y_0,w_1369,h_1180/fill/w_110,h_95,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Layer%201.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
+    },
+    {
+      "id": "27cf668dbb",
+      "name": "קניון סביונים",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://friendly-savyonim.co.il/wp-content/themes/savyonim-theme/assets/images/logo.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "ecf1cd910c",
+      "name": "סביונים פרימיום",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://friendly-savyonim.co.il/wp-content/themes/savyonim-theme/assets/images/savyonim_premium_logo_1.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "06899be82c",
+      "name": "Tax Free Beauty – טקס פרי ביוטי",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2022/03/taxfree376.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "4fd8bc3c4c",
+      "name": "WeShoes",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "we shoes",
+        "ווי שוז",
+        "וי שוז"
+      ],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2026/01/%D7%9C%D7%95%D7%92%D7%95-%D7%97%D7%A0%D7%95%D7%AA-WE-2-01.jpg",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "1986b39c33",
+      "name": "בית קפה לוסיל",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2023/05/lucille376-1.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "2413fb94c9",
+      "name": "פטמקס | PETMAX",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "petmax",
+        "פטמקס"
+      ],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2024/07/%D7%9C%D7%95%D7%92%D7%95-%D7%97%D7%A0%D7%95%D7%AA-%D7%A4%D7%98-%D7%9E%D7%A7%D7%A1-02.jpg",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "bcf9ebbd3e",
+      "name": "פוקס – FOX",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "fox",
+        "פוקס"
+      ],
+      "image": "https://friendly-ganyavne.co.il/wp-content/uploads/2015/03/FOX_logo376x137.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "fffae60d6d",
+      "name": "דלתא – Delta",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "delta",
+        "דלתא"
+      ],
+      "image": "https://friendly-ganyavne.co.il/wp-content/uploads/2015/03/Delta_logo376x137.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "f4e9962aad",
+      "name": "ללין – LALINE",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "laline",
+        "lalin",
+        "ללין"
+      ],
+      "image": "https://friendly-ganyavne.co.il/wp-content/uploads/2015/03/lalin_logo376x137.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "5217bc2f20",
+      "name": "צ'או בלה – Ciao Bella",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "ciao bella",
+        "צ'או בלה",
+        "צאו בלה"
+      ],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2016/12/%D7%A6%D7%90%D7%95%D7%91%D7%9C%D7%94376.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "9de3d5751e",
+      "name": "S.Wear",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "swear",
+        "אס וור"
+      ],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/03/swear376.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "1786d80b03",
+      "name": "ג'אמפ ועונות – JUMP & ONOT",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "onot",
+        "jump",
+        "ג'אמפ",
+        "עונות",
+        "ג'אמפ ועונות"
+      ],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2019/09/ONOT-BIG-1.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "9059adc4fa",
+      "name": "תמנון – TAMNOON",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "tamnoon",
+        "תמנון"
+      ],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2021/06/tamnoon376.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "db784d4ef7",
+      "name": "מגנוליה – magnolia",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "magnolia",
+        "מגנוליה"
+      ],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/04/magnolia_logo376x137.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "9f3949d29f",
+      "name": "אפרודיטה – Afrodita",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "afrodita",
+        "אפרודיטה"
+      ],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/03/Afrodita_376x1371.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "ec984b2b0e",
+      "name": "מוקה -MOCA",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "moca",
+        "mocca",
+        "מוקה"
+      ],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2018/06/moca376.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "1e5c739890",
+      "name": "צברה נעליים",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "sabra",
+        "tsabar",
+        "צברה"
+      ],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2016/12/%D7%A6%D7%91%D7%A8%D7%94376-1.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "62c1c5ed4c",
+      "name": "מתאים לי – ml",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "ml",
+        "מתאים לי"
+      ],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/04/ml376.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "678273dde5",
+      "name": "איל מקיאג' – IL MAKIAGE",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "il makiage",
+        "il makeage",
+        "איל מקיאג",
+        "איל מקיאג'"
+      ],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/03/IL-BIG.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "cbd43f6f0c",
+      "name": "סקארה – SACARA",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "sacara",
+        "סקארה"
+      ],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/11/sacara_376x137.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "39de6e0e74",
+      "name": "שופרסל שלי",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "shufersal",
+        "שופרסל"
+      ],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/04/SS_376x137.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "60fb654582",
+      "name": "שנטי – Shanti",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2018/12/shanti376.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "d296ab148d",
+      "name": "רולדין – ROLADIN",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "roladin",
+        "roladir",
+        "רולדין"
+      ],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2016/08/roladin376.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "20c4a78804",
+      "name": "ארומה אספרסו בר – AROMA",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "aroma",
+        "ארומה",
+        "ארומה אספרסו בר"
+      ],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2016/12/aroma376.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "eebe0c8914",
+      "name": "rebar – ריבר",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "rebar",
+        "re bar",
+        "ריבר",
+        "רי באר"
+      ],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2016/10/rebar376-1.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "431588c282",
+      "name": "בורגר סאלון – BURGER SALOON",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "burger",
+        "burgers bar",
+        "burger saloon",
+        "בורגרס בר",
+        "בורגר סלון",
+        "בורגר סאלון",
+        "בורגר"
+      ],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2016/11/burger376.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "35d0d5b7fd",
+      "name": "צ'וקה – chooka",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "chooka",
+        "צ'וקה",
+        "צוקה"
+      ],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/03/chooka_376x1371.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "34c0328eb0",
+      "name": "גאדג׳ט-טים",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/03/gadeteam376.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "c4425cef91",
+      "name": "HALLO & HALLO – הלו הלו",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/04/16002123_LOGO_HANUYUT_101X151.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "c05573054b",
+      "name": "פרחי ורדא | verde",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/04/%D7%9C%D7%95%D7%92%D7%95-%D7%97%D7%A0%D7%95%D7%AA-VERDE-02.jpg",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "008609253e",
+      "name": "Be by Shufersal",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "shufersal",
+        "שופרסל",
+        "שופרסל שלי"
+      ],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/04/be376.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "c67d527b76",
+      "name": "ויט-סק – מכבסה",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/04/16002123_LOGO_HANUYUT_101X1512.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "d67e2c2e23",
+      "name": "אייספא – iSpa express",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/03/ispa_logo376x137.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "c9e3ff512a",
+      "name": "דוכן פיס",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/03/MP_376x137.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "0cda3075fa",
+      "name": "מכון כושר סוויפט – SWIFT",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2018/10/swift367.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "16c806bbaa",
+      "name": "בנק מזרחי טפחות (525)",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/03/MT_376x137.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "ad59160735",
+      "name": "e-post | epost",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [
+        "e-post",
+        "epost",
+        "e post",
+        "אי פוסט",
+        "איפוסט"
+      ],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2017/02/epost376.jpg",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "14d6bbc614",
+      "name": "Boxit",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2017/08/boxit376.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "27a1664521",
+      "name": "אורנה ובר – מרכז לקוסמטיקה פיוז'ן",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/04/orna376.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "38b8909cfa",
+      "name": "תיק תק מתפרת",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/04/16002123_LOGO_HANUYUT_101X1513.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "96478727a4",
+      "name": "מספרת אלי אורן",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2016/09/16002123_LOGO_HANUYUT_376X137_hair.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "b95a9c5c60",
+      "name": "תשבץ",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/04/16002123_LOGO_HANUYUT_376X1378.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "7b20be815d",
+      "name": "לאומית שירותי בריאות",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2017/03/%D7%9C%D7%90%D7%95%D7%9E%D7%99%D7%AA.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "6f61c7d93c",
+      "name": "כללית מושלם – מרפאות רופאים מומחים",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2018/10/clalit376.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "9b9248eded",
+      "name": "מדטכניקה אורתופון",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/11/MD_376x137.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "c2fe9194fc",
+      "name": "מרכז רפואי",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2015/04/16002123_LOGO_HANUYUT_376X1373.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "a527dd67ba",
+      "name": "טיפת חלב – כללית",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2018/10/clalit376.png",
+      "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "68e2501be0",
+      "name": "בית כנסת",
+      "mall": "קניון סביונים יהוד",
+      "mall_key": "savyonim",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://friendly-savyonim.co.il/wp-content/uploads/2017/06/syna376.png",
       "url": "https://friendly-savyonim.co.il/store/"
     }
   ]
