@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T08:18:56Z",
+  "updated_at": "2026-10-21T08:08:59Z",
   "source": "scraper",
   "malls": [
     {
@@ -13,7 +13,7 @@
       "city": "יהוד"
     }
   ],
-  "count": 284,
+  "count": 285,
   "stores": [
     {
       "id": "8fb877d6e6",
@@ -1050,7 +1050,7 @@
         "fox home",
         "פוקס הום"
       ],
-      "image": "https://static.wixstatic.com/media/5e039a_6fdc9d72e0b1461aa613613633426e62~mv2.jpg/v1/fill/w_230,h_230,al_c,lg_1,q_80,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.jpg",
+      "image": "https://static.wixstatic.com/media/5e039a_42977be76ffa4c72a9b199979e6dd7a0~mv2.png/v1/fill/w_230,h_230,al_c,lg_1,q_85,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -1231,7 +1231,7 @@
         "24seven",
         "טוונטיפורסבן"
       ],
-      "image": "https://static.wixstatic.com/media/5e039a_27a4ff9b46f24346aabe457e5c1710a6~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%EF%BF%BD%D7%9E%D7%A6%D7%9D.png",
+      "image": "https://static.wixstatic.com/media/5e039a_27a4ff9b46f24346aabe457e5c1710a6~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -3316,7 +3316,7 @@
         "24seven",
         "טוונטיפורסבן"
       ],
-      "image": "https://static.wixstatic.com/media/5e039a_27a4ff9b46f24346aabe457e5c1710a6~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%EF%BF%BD%D7%9E%D7%A6%D7%9D.png",
+      "image": "https://static.wixstatic.com/media/5e039a_27a4ff9b46f24346aabe457e5c1710a6~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
       "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     },
     {
@@ -4230,6 +4230,19 @@
       "aliases": [],
       "image": "https://friendly-savyonim.co.il/wp-content/uploads/2017/06/syna376.png",
       "url": "https://friendly-savyonim.co.il/store/"
+    },
+    {
+      "id": "d09283804d",
+      "name": "Tnx - מתנות",
+      "mall": "קניון הדר ירושלים",
+      "mall_key": "hadar",
+      "floor": null,
+      "category": "כללי",
+      "phone": null,
+      "hours": null,
+      "aliases": [],
+      "image": "https://static.wixstatic.com/media/5e039a_f07e63a642364746a4f34c98b6463a56~mv2.png/v1/fill/w_230,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%A6%D7%9E%D7%A6%D7%9D.png",
+      "url": "https://www.hadar-mall.co.il/hadar-mall-stores"
     }
   ]
 }
